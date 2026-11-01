@@ -4,14 +4,14 @@ description: 'Maintain and edit existing Elementor V3 pages and theme builder pa
 license: MIT
 metadata:
   displayName: "wpnomy Elementor Classic Expert"
-  version: "0.0.1"
+  version: "0.1.0"
   author: "@wasimness"
   company: "SyncWin"
 ---
 
 # wpnomy Elementor Classic Expert (V3)
 
-Reached from `wpnomy`, which owns intake, design standards, JSON delivery and handover. This file carries V3 rules only.
+V3 rules only; shared intake and handover live in the `wpnomy` router.
 
 **Maintain-only.** V3 is kept for editing pages and parts that already exist in V3. No new V3 page, template or part is started; new work goes to `wpnomy-elementor-atomic-expert` or `wpnomy-bricks-expert`, and a request for a new V3 build is answered with that routing. Never convert or partly migrate an existing V3 page unless asked.
 
@@ -21,7 +21,7 @@ Open the router's build scratchpad at the start of every edit and log each chang
 
 ## Pairs with
 
-`elementor-build-page` for building through Novamira, and `kadence-build-page` where the work reaches theme settings rather than the page. Load them for the mechanics; the conventions here lead where they differ.
+`elementor-build-page` for building through Novamira, and `kadence-build-page` where the work reaches theme settings rather than the page. Use them for mechanics only (router, Novamira skills).
 
 ## Styling doctrine
 
@@ -37,7 +37,7 @@ V3 has no real class system and no native variables. Forcing a framework workflo
 
 If a needed colour or font is not in the globals, stop and ask. A one-off hex is the exact failure this rule prevents.
 
-Exception: a data table or similar block that genuinely needs markup lives in an HTML widget (see Widgets), styled in page-level custom CSS with `<prefix>-` classes and confined to that block.
+Exception: a data table or similar block that genuinely needs markup lives in an HTML widget (see Widgets), styled in page-level custom CSS with `sw-<site>-` classes and confined to that block.
 
 The Atomic Framework does not apply here. It depends on V4 Variables and Classes, and a V3 page cannot read them. Do not import its CSS onto a V3 page to get around the doctrine above.
 
@@ -67,10 +67,10 @@ Each of these fails silently rather than erroring, which is why they are worth m
 
 Prefer native. For an accordion or FAQ, use the Nested Accordion widget (the house default). One FAQPage source per page: leave its FAQ schema off wherever the data plugin or the SEO plugin emits FAQPage.
 
-Reserve the HTML widget for markup no native widget can produce. Put its styling in page-level custom CSS rather than inline, and prefix any class `<prefix>-` (company plus site code, router Naming) so it cannot collide with theme or plugin classes.
+Reserve the HTML widget for markup no native widget can produce. Put its styling in page-level custom CSS rather than inline, and prefix any class `sw-<site>-` (company plus site code, router Naming) so it cannot collide with theme or plugin classes.
 
 ## Direct-write notes
 
 When building through Novamira rather than emitting JSON, after any direct meta write: flush the object cache, delete `_elementor_css`, regenerate the post CSS, and run it twice, because the object cache serves stale page settings on the first pass.
 
-Elementor caches are separate from any page cache plugin. Forgetting one is the usual reason an update looks like it did not apply.
+Clear every cache layer after a change (router `references/site-audit.md`, caches row).

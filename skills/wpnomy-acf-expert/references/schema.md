@@ -48,7 +48,7 @@ Say what you removed and why, in the plan. A field that comes back next quarter 
 
 ## Field rules
 
-**Real instruction text wherever an editor could plausibly get it wrong**, written to the person filling it in. "The average sale price for the quarter, all home types. Enter the number only" beats "Average price". Genuinely self-evident fields can leave it empty.
+**Helpful field instructions where an editor could misread the field**, written for the person filling it in. "The average sale price for the quarter, all home types. Enter the number only" beats "Average price". Genuinely self-evident fields can leave it empty.
 
 **Flat fields for flat data. Repeaters for genuinely repeating rows. Flexible content only when the row shape itself varies.**
 

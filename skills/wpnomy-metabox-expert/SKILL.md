@@ -4,7 +4,7 @@ description: Plan and build Meta Box data models (field groups, custom post type
 license: MIT
 metadata:
   displayName: wpnomy Meta Box Expert
-  version: 0.0.1
+  version: 0.1.0
   author: "@wasimness"
   company: SyncWin
 ---

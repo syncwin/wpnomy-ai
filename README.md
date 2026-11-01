@@ -1,6 +1,6 @@
 # wpnomy
 
-**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.0.1 · **License:** MIT · **Home:** https://wpnomy.com/
+**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.0 · **License:** MIT · **Home:** https://wpnomy.com/
 
 Claude skills for building WordPress sites the right way from the start. One expert skill per plugin, all under one house black box policy: native elements, Atomic Framework variables, BEM classes, the plugin's own component mechanism, and a front-end check before anything is called done.
 
@@ -22,7 +22,7 @@ Start with `/wpnomy` and describe the job; it routes to the right expert.
 ## Install
 
 - **Claude Code:** add the plugin from its folder or marketplace (`claude plugin install wpnomy@<marketplace>`), then run `/wpnomy`.
-- **Claude desktop / Cowork:** upload `wpnomy v0.0.1.plugin` in the app's plugin settings.
+- **Claude desktop / Cowork:** upload `wpnomy v0.1.0.plugin` in the app's plugin settings.
 - **Undo:** uninstall the plugin from the same place.
 
 Site work runs through Novamira (MCP connector or CLI). Without site access the skills deliver the plan and exact output, marked unverified.
@@ -33,7 +33,7 @@ Site work runs through Novamira (MCP connector or CLI). Without site access the 
 - `skills/wpnomy/references/black-box-policy.md`: what to use, what never to use.
 - `skills/wpnomy/references/styling-and-code.md`: where every style and piece of code lives.
 
-Class names use the site's own prefix (`<prefix>-block__element`), read from the Atomic Wireframe project's `classPrefix` or the site canon.
+Class names use company plus site code (`sw-<site>-block__element`, `sw` for SyncWin), read from the Atomic Wireframe project's `classPrefix` or the site canon.
 
 ## Tests
 

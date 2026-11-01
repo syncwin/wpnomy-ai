@@ -36,7 +36,7 @@ The generator reads either export shape. The full one carries `meta`, `type`, `l
 
 **Token names pass through exactly as the framework writes them.** The framework owns its own namespace. If a future version prefixes its names, the prefix flows through; nothing here adds one. The manifest reports `token_names_prefixed` so the install step knows which it is dealing with.
 
-Anything this plugin invents that is not a framework token takes the house prefix: classes, wrappers and helper variables `<prefix>-` (the site's code). The router's naming rule is the full statement.
+Anything this plugin invents that is not a framework token takes the house prefix: classes and wrappers `sw-<site>-` (company plus site code), helper variables plain `sw-`. The router's naming rule is the full statement.
 
 Bare framework names are short and can collide with a theme or another plugin's variables. That is what the first-run audit checks for, and what the migration below resolves when a site already has its own layer.
 
@@ -44,7 +44,7 @@ Bare framework names are short and can collide with a theme or another plugin's 
 
 A site with its own variables, typically a `--<brand>-*` block in the kit CSS, is retired onto the framework rather than run alongside it. Two systems on one page means neither is canonical and the next edit picks the wrong one.
 
-1. **Map before deleting.** List every existing token and the framework token that replaces it. A brand navy maps to `primary`; a wash maps to `bg-surface`; a hairline maps to `border-color`. Anything with no framework equivalent is either a site-specific value, which becomes a `<prefix>-` variable outside the framework block, or a sign the framework needs the token, which is a product change.
+1. **Map before deleting.** List every existing token and the framework token that replaces it. A brand navy maps to `primary`; a wash maps to `bg-surface`; a hairline maps to `border-color`. Anything with no framework equivalent is either a site-specific value, which becomes an `sw-` variable outside the framework block, or a sign the framework needs the token, which is a product change.
 2. **Alias, do not cut.** Redefine each old token as the framework one: `--bh-navy: var(--primary);`. Every existing page keeps rendering while nothing has been edited yet.
 3. **Migrate consumers**, page by page, from the old name to the framework name.
 4. **Delete the alias block** only once nothing references it. Search the kit CSS, page-level CSS, every template and every HTML widget before deleting; a token used in one widget on one page fails silently and only there.
@@ -120,7 +120,7 @@ Dark mode ships in the CSS. Toggling it needs `data-theme="dark"` on the html el
 
 ## Naming and BEM
 
-Token names and class names are separate namespaces and must not blur. Tokens describe values. Classes describe components, carry no framework prefix, and take the house prefix: `md-hero`, `md-hero__title`, `md-card--featured`.
+Token names and class names are separate namespaces and must not blur. Tokens describe values. Classes describe components, carry no framework prefix, and take the house prefix: `md-hero`, `md-hero__title`, `sw-md-card--featured`.
 
 Classes consume tokens. A class sets `padding: var(--space-l)`, never a number.
 
@@ -143,7 +143,7 @@ Adding a token is a change to the product, not a page decision. It goes into the
 
 Raise it before adding, and raise it as a framework change so it reaches the version that is maintained separately. A token added only to a site's copy is lost on the next version drop, which is the whole reason for the prefix and the generator.
 
-A value that is genuinely site-specific rather than framework-level is not a framework token. It is a `<prefix>-` variable or a class, kept outside the framework block.
+A value that is genuinely site-specific rather than framework-level is not a framework token. It is an `sw-` variable or a class, kept outside the framework block.
 
 ## Failure modes
 

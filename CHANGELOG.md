@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.1 (2026-11-01)
+## 0.1.0 (2026-11-01)
 
 First release as wpnomy (renamed and extended from a private predecessor).
 
@@ -13,7 +13,7 @@ First release as wpnomy (renamed and extended from a private predecessor).
 
 ### Changed
 - Every skill renamed to `wpnomy-<plugin>-expert`; router renamed to `wpnomy` and now routes Oxygen 6, Builderius and Meta Box.
-- Class prefix is the site's own code (`<prefix>-`, from the Atomic Wireframe project's `classPrefix`), with no company part.
+- Class prefix is company plus site code, `sw-<site>-` (`sw` for SyncWin), read from the Atomic Wireframe project's `classPrefix`; helper variables use `sw-`.
 - ACF expert: shorter description, Oxygen 6 and Builderius binding, link to the house rules and to the Meta Box comparison.
 - Author @wasimness, company SyncWin, MIT license.
 

@@ -57,7 +57,7 @@ Style controls on an element are for placement one-offs only (the router's `styl
 
 Link object: `{ type: "internal", postId }` or `{ type: "external", url, newTab }`; `dynamic` and `media` types also exist. Empty link objects are rejected.
 
-Class custom CSS is a full rule using the class selector (`.md-pill.is-active { ... }`), with `\n` newlines.
+Class custom CSS is a full rule using the class selector (`.sw-md-pill.is-active { ... }`), with `\n` newlines.
 
 ## Cascade
 

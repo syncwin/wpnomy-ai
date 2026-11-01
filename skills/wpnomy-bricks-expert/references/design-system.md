@@ -88,11 +88,11 @@ Output uses `font-display: swap`. Turning Google Fonts off (`disableGoogleFonts`
 
 ## Dark mode
 
-Off unless the brief asks. If asked, the framework's `[data-theme="dark"]` block from `plan.json` goes in one place only (a FluentSnippets snippet, `<prefix>-dark-mode`), and the toggle that sets `data-theme` is a decision to raise. Never two dark-mode mechanisms.
+Off unless the brief asks. If asked, the framework's `[data-theme="dark"]` block from `plan.json` goes in one place only (a FluentSnippets snippet, `sw-<site>-dark-mode`), and the toggle that sets `data-theme` is a decision to raise. Never two dark-mode mechanisms.
 
 ## Changing a token later
 
-Change it in Atomic Wireframe (with a yes), re-run the script, and update only the changed rows. Renaming a variable does not update `var(--old)` anywhere: sweep classes, theme styles, components and every document (`bricks/checkout-site-repository` with cursors, recording any coverage limit) before a rename, or do not rename.
+To change it: edit the project in Atomic Wireframe (after a yes), re-run the script, then update only the changed rows. Renaming a variable does not update `var(--old)` anywhere: sweep classes, theme styles, components and every document (`bricks/checkout-site-repository` with cursors, recording any coverage limit) before a rename, or do not rename.
 
 ## Existing token layers
 

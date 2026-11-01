@@ -4,7 +4,7 @@ description: Build and edit Oxygen 6 pages, templates, headers, footers, compone
 license: MIT
 metadata:
   displayName: wpnomy Oxygen Expert
-  version: 0.0.1
+  version: 0.1.0
   author: "@wasimness"
   company: SyncWin
 ---

@@ -34,7 +34,7 @@ Name the type first; it decides what changes and what is checked.
 4. The plugin's official docs.
 5. General knowledge.
 
-When 3 and 4 disagree, trust the site and note the version. When the owner's instruction breaks a house rule, say which rule and ask once.
+If the site and the docs disagree, the site wins; record the version. If the owner's instruction conflicts with a house rule, name the rule and ask once.
 
 ## 4. Design system rules
 

@@ -4,7 +4,7 @@ description: Entry point for every WordPress build with the house black box poli
 license: MIT
 metadata:
   displayName: "wpnomy"
-  version: "0.0.1"
+  version: "0.1.0"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -114,7 +114,7 @@ Copy `assets/build-scratchpad.md` at the start of every run and keep it current.
 
 **Research before implementing.** If any element, control, tag or behaviour is unfamiliar, research it before writing anything. V4 moves fast and the feature set at build time may differ from what these files describe. Reference set: `elementor.com/help/build-with-the-editor/v4-editor/`, `elementor.com/help/components-2/`, `developers.elementor.com/`; for Bricks, the live `bricks/get-element-schema` first, then `academy.bricksbuilder.io`. If uncertainty remains, ask for details or a documentation link. Never guess a control name, a tag format or a schema shape.
 
-**Naming.** Atomic Framework token names pass through exactly as the framework writes them; the framework owns its namespace and nothing here renames it. **Class prefix: the site's code.** Every BEM class this plugin invents, on any builder, is `<prefix>-<block>`, where the prefix is the site's short code, lowercase kebab-case (`md-card__title`). The code names the brand or person, never the domain, so a domain move changes no class. Read it from the site canon every run, never from memory: on Atomic Wireframe sites it is the project's `classPrefix`; elsewhere it is recorded in the scratchpad at the first-run audit. A site with no code yet is a question before any class is created. A component or class carried to another site is renamed to that site's prefix on the way in. State classes (`is-<state>`, always paired with their block) and `js-` hook classes stay unprefixed. Helper variables and FluentSnippets names use the same prefix (`<prefix>-<purpose>`, `styling-and-code.md`). An existing site's own older prefix is matched when editing that old work and never adopted for new work.
+**Naming.** Atomic Framework token names pass through exactly as the framework writes them; the framework owns its namespace and nothing here renames it. **Class prefix: company plus site code.** Every BEM class this plugin invents, on any builder, is `sw-<site>-<block>`: `sw` for SyncWin, then the site's short code (`sw-md-card__title`). The code names the brand or person, never the domain, so a domain move changes no class. Read the code from the site canon every run, never from memory: on Atomic Wireframe sites it is the project's `classPrefix`; elsewhere it is recorded in the scratchpad at the first-run audit. A site with no code yet is a question before any class is created. A component or class carried to another site is renamed to that site's prefix on the way in. State classes (`is-<state>`, always paired with their block) and `js-` hook classes stay unprefixed. Helper variables use plain `sw-`; FluentSnippets names follow `styling-and-code.md` (`sw-<site>-<purpose>`). An existing site's own older prefix is matched when editing that old work and never adopted for new work.
 
 **Never claim a change is live** until it is verified on the rendered page. Code outside the builder goes only where `references/styling-and-code.md` puts it, and every snippet is logged in the scratchpad.
 

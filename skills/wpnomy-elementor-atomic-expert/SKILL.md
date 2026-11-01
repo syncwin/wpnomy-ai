@@ -4,7 +4,7 @@ description: Build and edit Elementor V4 pages and theme builder parts with Atom
 license: MIT
 metadata:
   displayName: "wpnomy Elementor Atomic Expert"
-  version: "0.0.1"
+  version: "0.1.0"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -49,7 +49,7 @@ This is where the Oxygen and Bricks workflow carries over, because V4 has the pr
 
 **Variables are the tokens.** Colours, typography and sizes live as Variables. Read the site's existing set first and use it. Never hardcode a value a variable already expresses, and never create a near-duplicate because the existing name was not obvious.
 
-**Classes carry the styling**, named in BEM: `block`, `block__element`, `block--modifier`. Style the class, not the element. Any class this plugin invents takes the company plus site prefix, `<prefix>-` (router, Naming). An element styled locally is a one-off the next page cannot reuse.
+**Classes carry the styling**, named in BEM: `block`, `block__element`, `block--modifier`. Style the class, not the element. Any class this plugin invents takes the company plus site prefix, `sw-<site>-` (router, Naming). An element styled locally is a one-off the next page cannot reuse.
 
 V4 Global Classes are a flat namespace with no descendant selectors. BEM is built for exactly that, so it fits, but context has to live in the class name rather than a parent selector. A `card__title` that differs inside two blocks needs two class names, not a nested rule.
 
@@ -83,7 +83,7 @@ Display Conditions are server-side render logic only (a missing field, a user st
 
 Use before writing code, for any layout that repeats.
 
-1. Build the layout visually with native atomic elements.
+1. Lay out the section with native atomic elements.
 2. Create a Component from the container.
 3. Expose only the properties that should vary per instance, typically text and image sources.
 4. Keep the core layout and styling controlled globally, inside the component.
