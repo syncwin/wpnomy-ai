@@ -21,7 +21,7 @@ Start with `/wpnomy` and describe the job; it routes to the right expert.
 
 ## Install
 
-- **Claude Code:** add the plugin from its folder or marketplace (`claude plugin install wpnomy@<marketplace>`), then run `/wpnomy`.
+- **Claude Code:** `/plugin marketplace add syncwin/wpnomy-ai`, then `/plugin install wpnomy@wpnomy`, then run `/wpnomy`. For automatic updates: `/plugin` → Marketplaces → `wpnomy` → enable auto-update.
 - **Claude desktop / Cowork:** upload `wpnomy v0.1.0.plugin` in the app's plugin settings.
 - **Undo:** uninstall the plugin from the same place.
 
