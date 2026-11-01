@@ -1,0 +1,684 @@
+{
+  "framework_version": "2.0.0",
+  "source_export": "atomic-framework-tokens.json",
+  "token_names_prefixed": false,
+  "registers": [
+    {
+      "label": "primary",
+      "token": "--primary",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(25% 0 0)",
+      "mode": "mirror"
+    },
+    {
+      "label": "secondary",
+      "token": "--secondary",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(45% 0 0)",
+      "mode": "mirror"
+    },
+    {
+      "label": "accent",
+      "token": "--accent",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(60% 0 0)",
+      "mode": "mirror"
+    },
+    {
+      "label": "text-color",
+      "token": "--text-color",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(32% 0.006 264)",
+      "mode": "mirror"
+    },
+    {
+      "label": "heading-color",
+      "token": "--heading-color",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(15% 0.005 264)",
+      "mode": "mirror"
+    },
+    {
+      "label": "bg-body",
+      "token": "--bg-body",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(100% 0 0)",
+      "mode": "mirror"
+    },
+    {
+      "label": "bg-surface",
+      "token": "--bg-surface",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(97% 0.003 264)",
+      "mode": "mirror"
+    },
+    {
+      "label": "border-color",
+      "token": "--border-color",
+      "category": "Colors",
+      "layer": "atom",
+      "source_type": "color",
+      "type": "color",
+      "value": "oklch(87% 0.005 264)",
+      "mode": "mirror"
+    },
+    {
+      "label": "font-body",
+      "token": "--font-body",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "font",
+      "type": "font",
+      "value": "system-ui, -apple-system, sans-serif",
+      "mode": "mirror"
+    },
+    {
+      "label": "font-mono",
+      "token": "--font-mono",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "font",
+      "type": "font",
+      "value": "ui-monospace, 'Cascadia Code', 'Fira Code', monospace",
+      "mode": "mirror"
+    },
+    {
+      "label": "text-xs",
+      "token": "--text-xs",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-xs)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-s",
+      "token": "--text-s",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-s)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-m",
+      "token": "--text-m",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-m)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-l",
+      "token": "--text-l",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-l)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-xl",
+      "token": "--text-xl",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-2xl",
+      "token": "--text-2xl",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-2xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-3xl",
+      "token": "--text-3xl",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-3xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "text-4xl",
+      "token": "--text-4xl",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--text-4xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "h1",
+      "token": "--h1",
+      "category": "Typography",
+      "layer": "molecule",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--h1)",
+      "mode": "reference"
+    },
+    {
+      "label": "h2",
+      "token": "--h2",
+      "category": "Typography",
+      "layer": "molecule",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--h2)",
+      "mode": "reference"
+    },
+    {
+      "label": "h3",
+      "token": "--h3",
+      "category": "Typography",
+      "layer": "molecule",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--h3)",
+      "mode": "reference"
+    },
+    {
+      "label": "h4",
+      "token": "--h4",
+      "category": "Typography",
+      "layer": "molecule",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--h4)",
+      "mode": "reference"
+    },
+    {
+      "label": "h5",
+      "token": "--h5",
+      "category": "Typography",
+      "layer": "molecule",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--h5)",
+      "mode": "reference"
+    },
+    {
+      "label": "h6",
+      "token": "--h6",
+      "category": "Typography",
+      "layer": "molecule",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--h6)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-xs",
+      "token": "--space-xs",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-xs)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-s",
+      "token": "--space-s",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-s)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-m",
+      "token": "--space-m",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-m)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-l",
+      "token": "--space-l",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-l)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-xl",
+      "token": "--space-xl",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-2xl",
+      "token": "--space-2xl",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-2xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-3xl",
+      "token": "--space-3xl",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-3xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "space-4xl",
+      "token": "--space-4xl",
+      "category": "Spacing",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--space-4xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "min-screen-width",
+      "token": "--min-screen-width",
+      "category": "Layout",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--min-screen-width)",
+      "mode": "reference"
+    },
+    {
+      "label": "max-screen-width",
+      "token": "--max-screen-width",
+      "category": "Layout",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--max-screen-width)",
+      "mode": "reference"
+    },
+    {
+      "label": "container-width",
+      "token": "--container-width",
+      "category": "Layout",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--container-width)",
+      "mode": "reference"
+    },
+    {
+      "label": "max-width",
+      "token": "--max-width",
+      "category": "Layout",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--max-width)",
+      "mode": "reference"
+    },
+    {
+      "label": "max-width-m",
+      "token": "--max-width-m",
+      "category": "Layout",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--max-width-m)",
+      "mode": "reference"
+    },
+    {
+      "label": "max-width-s",
+      "token": "--max-width-s",
+      "category": "Layout",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--max-width-s)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-none",
+      "token": "--radius-none",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-none)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-xs",
+      "token": "--radius-xs",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-xs)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-s",
+      "token": "--radius-s",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-s)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-m",
+      "token": "--radius-m",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-m)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-l",
+      "token": "--radius-l",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-l)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-xl",
+      "token": "--radius-xl",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-xl)",
+      "mode": "reference"
+    },
+    {
+      "label": "radius-full",
+      "token": "--radius-full",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--radius-full)",
+      "mode": "reference"
+    },
+    {
+      "label": "focus-ring-width",
+      "token": "--focus-ring-width",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--focus-ring-width)",
+      "mode": "reference"
+    },
+    {
+      "label": "focus-ring-offset",
+      "token": "--focus-ring-offset",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "size",
+      "type": "size",
+      "value": "var(--focus-ring-offset)",
+      "mode": "reference"
+    }
+  ],
+  "needs_site_value": [
+    {
+      "label": "font-heading",
+      "token": "--font-heading",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "font",
+      "type": "font",
+      "value": null,
+      "mode": "site",
+      "note": "ships as a keyword; set the site's real family at install"
+    }
+  ],
+  "css_only": [
+    {
+      "label": "on-accent",
+      "token": "--on-accent",
+      "category": "Colors",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "muted-foreground",
+      "token": "--muted-foreground",
+      "category": "Colors",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "surface-muted",
+      "token": "--surface-muted",
+      "category": "Colors",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "primary-hover",
+      "token": "--primary-hover",
+      "category": "Colors",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "secondary-hover",
+      "token": "--secondary-hover",
+      "category": "Colors",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "accent-hover",
+      "token": "--accent-hover",
+      "category": "Colors",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "text-line-height",
+      "token": "--text-line-height",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "string",
+      "reason": "no Elementor Variable type for 'string'"
+    },
+    {
+      "label": "heading-line-height",
+      "token": "--heading-line-height",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "string",
+      "reason": "no Elementor Variable type for 'string'"
+    },
+    {
+      "label": "text-font-weight",
+      "token": "--text-font-weight",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "heading-font-weight",
+      "token": "--heading-font-weight",
+      "category": "Typography",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "shadow-color",
+      "token": "--shadow-color",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    },
+    {
+      "label": "shadow-xs",
+      "token": "--shadow-xs",
+      "category": "Effects",
+      "layer": "molecule",
+      "source_type": "shadow",
+      "reason": "no Elementor Variable type for 'shadow'"
+    },
+    {
+      "label": "shadow-s",
+      "token": "--shadow-s",
+      "category": "Effects",
+      "layer": "molecule",
+      "source_type": "shadow",
+      "reason": "no Elementor Variable type for 'shadow'"
+    },
+    {
+      "label": "shadow-m",
+      "token": "--shadow-m",
+      "category": "Effects",
+      "layer": "molecule",
+      "source_type": "shadow",
+      "reason": "no Elementor Variable type for 'shadow'"
+    },
+    {
+      "label": "shadow-l",
+      "token": "--shadow-l",
+      "category": "Effects",
+      "layer": "molecule",
+      "source_type": "shadow",
+      "reason": "no Elementor Variable type for 'shadow'"
+    },
+    {
+      "label": "shadow-xl",
+      "token": "--shadow-xl",
+      "category": "Effects",
+      "layer": "molecule",
+      "source_type": "shadow",
+      "reason": "no Elementor Variable type for 'shadow'"
+    },
+    {
+      "label": "transition",
+      "token": "--transition",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "transition",
+      "reason": "no Elementor Variable type for 'transition'"
+    },
+    {
+      "label": "transition-fast",
+      "token": "--transition-fast",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "transition",
+      "reason": "no Elementor Variable type for 'transition'"
+    },
+    {
+      "label": "z-dropdown",
+      "token": "--z-dropdown",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "z-sticky",
+      "token": "--z-sticky",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "z-overlay",
+      "token": "--z-overlay",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "z-modal",
+      "token": "--z-modal",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "z-tooltip",
+      "token": "--z-tooltip",
+      "category": "Effects",
+      "layer": "atom",
+      "source_type": "number",
+      "reason": "no Elementor Variable type for 'number'"
+    },
+    {
+      "label": "focus-ring-color",
+      "token": "--focus-ring-color",
+      "category": "Effects",
+      "layer": "molecule",
+      "source_type": "color",
+      "reason": "derived value; a colour variable holds a literal"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+Atomic Framework 2.0.0  source atomic-framework-tokens.json
+72 tokens: 47 register, 1 need a site value, 24 stay in CSS.
+Dark values in export: yes. Root font size in export: 62.5%.
+
+Register: 8 color, 2 font, 37 size
+  reference mode (value is var(--token)): 37
+  mirror mode (value copied, keep in step with the CSS): 10
+
+Need a site value before registering:
+  font-heading             ships as a keyword; set the site's real family at install
+
+CSS only:
+  on-accent                derived value; a colour variable holds a literal
+  muted-foreground         derived value; a colour variable holds a literal
+  surface-muted            derived value; a colour variable holds a literal
+  primary-hover            derived value; a colour variable holds a literal
+  secondary-hover          derived value; a colour variable holds a literal
+  accent-hover             derived value; a colour variable holds a literal
+  text-line-height         no Elementor Variable type for 'string'
+  heading-line-height      no Elementor Variable type for 'string'
+  text-font-weight         no Elementor Variable type for 'number'
+  heading-font-weight      no Elementor Variable type for 'number'
+  shadow-color             derived value; a colour variable holds a literal
+  shadow-xs                no Elementor Variable type for 'shadow'
+  shadow-s                 no Elementor Variable type for 'shadow'
+  shadow-m                 no Elementor Variable type for 'shadow'
+  shadow-l                 no Elementor Variable type for 'shadow'
+  shadow-xl                no Elementor Variable type for 'shadow'
+  transition               no Elementor Variable type for 'transition'
+  transition-fast          no Elementor Variable type for 'transition'
+  z-dropdown               no Elementor Variable type for 'number'
+  z-sticky                 no Elementor Variable type for 'number'
+  z-overlay                no Elementor Variable type for 'number'
+  z-modal                  no Elementor Variable type for 'number'
+  z-tooltip                no Elementor Variable type for 'number'
+  focus-ring-color         derived value; a colour variable holds a literal
+
+Dark mode is CSS only: Elementor Variables have no dark variant.

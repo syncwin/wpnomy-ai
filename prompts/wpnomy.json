@@ -1,0 +1,75 @@
+{
+  "prompts": [
+    {
+      "id": "a1f4c7e2b9d6538041ae2c7f9b3d6e15",
+      "title": "wpnomy",
+      "description": "Launch an Elementor V4, Bricks or ACF build under the black box policy. Six fields, then the brief.",
+      "content": "# wpnomy\n\nRun /wpnomy and route from the answers below.\n\n* **Site:** `{{site}}`\n* **Builder:** `{{builder}}`\n* **ACF Content:** `{{acf_content}}`\n* **Build Method:** `{{build_method}}`\n* **Files:** `{{files}}`\n* **Brief:** `{{details}}`\n\nLoad only the build skill the builder calls for, plus the ACF skill when fields are involved. Do not load another build skill. Elementor V3 is for edits to existing V3 pages only; a new page goes to V4 or Bricks.\n\nFollow the black box policy on every element: semantic HTML first, CSS second, tiny vanilla JS third, a builder widget last. No composite or add-on widgets. Reuse a component, class or token before creating one; design lives in variables and BEM classes (`<prefix>-` prefix), elements hold only placement one-offs, and large or site-wide code goes in FluentSnippets. Any builder-bound element is styled by classes and logged.\n\nInfer the surface, page or header or single or archive or loop item, from the brief. Ask only if it is genuinely ambiguous.\n\nBefore building: confirm the environment and builder against what the connector reports, not what this prompt says. On a first run against this site, run the read-only site audit and report recommended optimizations without applying any. Inspect every supplied file. Name any missing input and stop rather than assuming it. Show the section plan and wait for a yes before anything that creates, changes, publishes or deletes.",
+      "variables": {
+        "site": {
+          "type": "Radio",
+          "label": "Site",
+          "placeholder": "site",
+          "required": true,
+          "maxLength": "",
+          "context": "Palette, variables, classes, breakpoints and the class prefix are per site and never carried across. The environment is checked against the connector before any write.",
+          "options": "Staging site\nProduction site\nOther (Name It In The Brief)"
+        },
+        "builder": {
+          "type": "Radio",
+          "label": "Builder",
+          "placeholder": "builder",
+          "required": true,
+          "maxLength": "",
+          "context": "Picks the build skill. Bricks and Elementor V4 take the Atomic Framework as variables and BEM classes. Elementor V3 is maintain-only: edits to existing V3 pages, never a new page. An attached export keeps its own builder and version.",
+          "options": "Bricks\nElementor V4 Atomic\nElementor V3, Edit An Existing Page\nMatch The Attached Export\nCheck The Site First\nNot Page Builder Work"
+        },
+        "acf_content": {
+          "type": "Radio",
+          "label": "ACF Content",
+          "placeholder": "acf_content",
+          "required": true,
+          "maxLength": "",
+          "context": "Loads the ACF skill and decides whether values are typed into the page or bound to fields. Name the fields in the brief.",
+          "options": "No ACF, Static Page\nBind Existing Fields\nDesign New Fields First\nACF Schema Only, No Page"
+        },
+        "build_method": {
+          "type": "Radio",
+          "label": "Build Method",
+          "placeholder": "build_method",
+          "required": true,
+          "maxLength": "",
+          "context": "Builds on the site through Novamira, or produces a file: Elementor V3 JSON for existing V3 work (V4 waits for a verified export), Bricks clipboard JSON for a section or a transfer package for templates, classes and variables. ACF files have no limit. Plan Only writes nothing.",
+          "options": "Build On The Site (Novamira)\nGenerate A File To Import\nPlan Only, Build Nothing"
+        },
+        "files": {
+          "type": "Radio",
+          "label": "Files",
+          "placeholder": "files",
+          "required": false,
+          "maxLength": "",
+          "context": "Useful: the mockup, the Atomic Wireframe project or framework export, an export being edited, an Export Kit or Global Colors screenshot, the ACF field group, the old-site backup for a migration. Live site fetches fail behind the host captcha, so screenshots come from you.",
+          "options": "Attached Here\nIn The Project Files\nBoth\nRead Them From The Site\nNone, Brief Only"
+        },
+        "details": {
+          "type": "Textarea",
+          "label": "Brief",
+          "placeholder": "Hero, four feature cards, FAQ, CTA. Fields community_name and market_avg_price. Or: rebuild section 4 only, leave the rest. Or: palette is navy #1E3D7A and gold #C8A44D.",
+          "required": true,
+          "maxLength": 5000,
+          "options": "",
+          "context": "What to build, and what not to touch. Sections and components, which parts are dynamic and which fields feed them, display conditions in plain language, the palette for a new site or a framework install, and anything that contradicts the files."
+        }
+      },
+      "lastModified": "2026-10-05T20:52:00.000Z",
+      "created": "2026-09-14T18:52:45.751Z"
+    }
+  ],
+  "metadata": {
+    "exportDate": "2026-10-05T20:52:00.000Z",
+    "version": "2.0",
+    "format": "prompt-builder-plain",
+    "count": 1,
+    "checksum": "-9vapbe"
+  }
+}

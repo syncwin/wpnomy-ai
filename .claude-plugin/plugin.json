@@ -1,0 +1,25 @@
+{
+  "name": "wpnomy",
+  "displayName": "wpnomy",
+  "version": "0.0.1",
+  "description": "Build WordPress sites the right way from the start: one expert skill per plugin (Bricks, Elementor V4 and V3, Oxygen 6, Builderius, ACF, Meta Box) under one house black box policy, with Atomic Framework variables, BEM classes, native elements and front-end checks.",
+  "author": {
+    "name": "@wasimness",
+    "company": "SyncWin",
+    "email": "support@syncwin.com",
+    "url": "https://syncwin.com"
+  },
+  "homepage": "https://wpnomy.com/",
+  "repository": "https://github.com/syncwin/wpnomy-ai",
+  "license": "MIT",
+  "keywords": ["wordpress", "bricks", "elementor", "oxygen", "builderius", "acf", "meta-box", "design-system", "atomic-wireframe", "page-builder"],
+  "metadata": {
+    "displayName": "wpnomy",
+    "version": "0.0.1",
+    "author": "@wasimness",
+    "company": "SyncWin",
+    "homepage": "https://wpnomy.com/",
+    "repository": "https://github.com/syncwin/wpnomy-ai",
+    "license": "MIT"
+  }
+}
