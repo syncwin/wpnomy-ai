@@ -3,13 +3,13 @@ name: wpnomy-bricks-expert
 description: Build and edit Bricks Builder pages, templates, components, forms and design systems under the house black box policy, and map the Atomic Framework from the Atomic Wireframe plugin into Bricks global variables, theme styles, breakpoints and BEM global classes. Use when the target site runs the Bricks theme, when the user says Bricks, Bricks template, global class, Bricks component, query loop, query filter, Bricks form, nav nested, mega menu, Bricks dynamic data or conditions, when Atomic Wireframe tokens or blocks need to reach Bricks, or when wpnomy routes here after the builder question. Covers the ability call order through Novamira, the writes that save fine and render wrong, ACF binding, media for migrations, and front-end verification. Do NOT use for Elementor work.
 license: MIT
 metadata:
-  displayName: "wpnomy Bricks Expert"
-  version: "0.1.0"
+  displayName: "WPnomy Bricks Expert"
+  version: "0.1.1"
   author: "@wasimness"
   company: "SyncWin"
 ---
 
-# wpnomy Bricks Expert
+# WPnomy Bricks Expert
 
 Reached from `wpnomy`, which owns intake, design standards, handover and the scratchpad. This file carries the Bricks build rules. Fill the scratchpad's **Bricks canon** block, not the Elementor one.
 

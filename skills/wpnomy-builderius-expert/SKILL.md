@@ -3,13 +3,13 @@ name: wpnomy-builderius-expert
 description: Build and edit Builderius templates, components and global settings under the house black box policy, and map Atomic Framework variables, classes and breakpoints into Builderius. Use when the site runs Builderius or Builderius PRO, when the user says Builderius, Builderius template, Builderius component, HtmlElement, global CSS, CSS variables panel, Builderius breakpoints, commit, publish, or pastes Builderius copied elements, or when the wpnomy router sends Builderius work here. Covers the HtmlElement module, global settings commits through GraphQL, variables in global CSS, breakpoints, components, publishing safely and front-end checks. Not for Bricks, Oxygen or Elementor.
 license: MIT
 metadata:
-  displayName: wpnomy Builderius Expert
-  version: 0.1.0
+  displayName: WPnomy Builderius Expert
+  version: 0.1.1
   author: "@wasimness"
   company: SyncWin
 ---
 
-# wpnomy Builderius Expert
+# WPnomy Builderius Expert
 
 Checked on Builderius 1.4-beta with Builderius PRO 1.4-beta. On another version, re-check each step on the site first.
 

@@ -3,13 +3,13 @@ name: wpnomy-acf-expert
 description: Design ACF schemas and bind ACF data into pages. Plans and generates importable ACF JSON (custom post types, taxonomies, field groups, options pages, repeaters, flexible content, clone and relationship fields) or writes them live through Novamira, then wires the fields into Bricks, Elementor, Oxygen 6 or Builderius. Use whenever the user mentions ACF, Advanced Custom Fields, acf-json, a field group, a CPT, a custom taxonomy, an options page, a repeater or flexible content; asks what fields or post types a site needs; asks for a field plan, schema or importable JSON; or asks how to show a custom field on a page or why one renders blank. Use it even without the word ACF when the request is about structuring WordPress content into fields on an ACF site. For Meta Box sites use wpnomy-metabox-expert.
 license: MIT
 metadata:
-  displayName: "wpnomy ACF Expert"
-  version: "0.1.0"
+  displayName: "WPnomy ACF Expert"
+  version: "0.1.1"
   author: "@wasimness"
   company: "SyncWin"
 ---
 
-# wpnomy ACF Expert
+# WPnomy ACF Expert
 
 Two jobs, in order: decide what the schema should be, then get its values onto a page.
 

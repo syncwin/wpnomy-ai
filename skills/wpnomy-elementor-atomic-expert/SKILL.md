@@ -3,13 +3,13 @@ name: wpnomy-elementor-atomic-expert
 description: Build and edit Elementor V4 pages and theme builder parts with Atomic Elements, Variables, Global Classes, Components and Interactions, and install or extend the Atomic Framework design system on a site. Use when the target site or the supplied export is Elementor V4, when the user says V4, atomic, Global Classes, Variables, Components, design tokens or BEM, when they ask to map the Atomic Framework onto Elementor, when a V4 page needs a change, or when wpnomy routes here after the version question. Covers the token-to-variable mapping, the atomic widget coverage gap, BEM class naming in a flat namespace, and the CSS escalation order. Do NOT use for Elementor 3.x containers and classic widgets, which are wpnomy-elementor-classic-expert.
 license: MIT
 metadata:
-  displayName: "wpnomy Elementor Atomic Expert"
-  version: "0.1.0"
+  displayName: "WPnomy Elementor Atomic Expert"
+  version: "0.1.1"
   author: "@wasimness"
   company: "SyncWin"
 ---
 
-# wpnomy Elementor Atomic Expert (V4)
+# WPnomy Elementor Atomic Expert (V4)
 
 Reached from `wpnomy`, which owns intake, design standards, JSON delivery and handover. This file carries V4 build rules only.
 

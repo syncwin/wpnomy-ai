@@ -3,13 +3,13 @@ name: wpnomy-metabox-expert
 description: Plan and build Meta Box data models (field groups, custom post types, taxonomies, settings pages, relationships and custom tables) and connect the fields to Bricks, Oxygen 6, Builderius or Elementor without black boxes. Use when the site runs Meta Box or Meta Box AIO, when the user says Meta Box, metabox, rwmb_meta, rwmb_meta_boxes, MB Builder, MB Custom Table, MB Views, MB Relationships, MB Blocks, MB Settings Page, Meta Box abilities, custom fields with Meta Box, moving from ACF to Meta Box, or asks whether to use Meta Box or ACF, or when the wpnomy router sends Meta Box work here. Not for ACF itself (wpnomy-acf-expert) or for page layout (the builder's expert skill).
 license: MIT
 metadata:
-  displayName: wpnomy Meta Box Expert
-  version: 0.1.0
+  displayName: WPnomy Meta Box Expert
+  version: 0.1.1
   author: "@wasimness"
   company: SyncWin
 ---
 
-# wpnomy Meta Box Expert
+# WPnomy Meta Box Expert
 
 Checked on Meta Box AIO 3.13.1 (Meta Box core 5.15.3) with Bricks 2.4.4. On another version, re-check each step on the site first.
 

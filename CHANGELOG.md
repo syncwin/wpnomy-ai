@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 (2026-11-02)
+
+### Changed
+- Display name is now WPnomy (plugin, skills, README); slugs and skill names are unchanged.
+- README lists every command (`/wpnomy:wpnomy` and each expert) and the marketplace install for claude.ai, desktop and mobile.
+
 ## 0.1.0 (2026-11-01)
 
 First release as wpnomy (renamed and extended from a private predecessor).

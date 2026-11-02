@@ -1,6 +1,6 @@
-# wpnomy
+# WPnomy
 
-**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.0 · **License:** MIT · **Home:** https://wpnomy.com/
+**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.1 · **License:** MIT · **Home:** https://wpnomy.com/
 
 Claude skills for building WordPress sites the right way from the start. One expert skill per plugin, all under one house black box policy: native elements, Atomic Framework variables, BEM classes, the plugin's own component mechanism, and a front-end check before anything is called done.
 
@@ -17,12 +17,27 @@ Claude skills for building WordPress sites the right way from the start. One exp
 | `wpnomy-acf-expert` | ACF schemas, importable JSON, binding ACF values into pages |
 | `wpnomy-metabox-expert` | Meta Box field groups, post types, custom tables, official abilities, bindings |
 
-Start with `/wpnomy` and describe the job; it routes to the right expert.
+## Commands
+
+Start with the router and describe the job; it sends the work to the right expert. Each expert can also be called directly.
+
+| Command | Use it for |
+|---|---|
+| `/wpnomy:wpnomy` | Any WordPress build: intake, routing, house rules |
+| `/wpnomy:wpnomy-bricks-expert` | Bricks |
+| `/wpnomy:wpnomy-elementor-atomic-expert` | Elementor V4 |
+| `/wpnomy:wpnomy-elementor-classic-expert` | Elementor V3 edits |
+| `/wpnomy:wpnomy-oxygen-expert` | Oxygen 6 |
+| `/wpnomy:wpnomy-builderius-expert` | Builderius |
+| `/wpnomy:wpnomy-acf-expert` | ACF |
+| `/wpnomy:wpnomy-metabox-expert` | Meta Box |
+
+Example: `/wpnomy:wpnomy add an Event post type with date and venue using Meta Box and show it on the single event template in Bricks`
 
 ## Install
 
-- **Claude Code:** `/plugin marketplace add syncwin/wpnomy-ai`, then `/plugin install wpnomy@wpnomy`, then run `/wpnomy`. For automatic updates: `/plugin` → Marketplaces → `wpnomy` → enable auto-update.
-- **Claude desktop / Cowork:** upload `wpnomy v0.1.0.plugin` in the app's plugin settings.
+- **claude.ai, desktop app, mobile (auto-updates):** Settings → Customize → Plugins → Add → Add marketplace → `syncwin/wpnomy-ai`, then install WPnomy.
+- **Claude Code terminal:** `claude plugin marketplace add syncwin/wpnomy-ai`, then `claude plugin install wpnomy@wpnomy`.
 - **Undo:** uninstall the plugin from the same place.
 
 Site work runs through Novamira (MCP connector or CLI). Without site access the skills deliver the plan and exact output, marked unverified.

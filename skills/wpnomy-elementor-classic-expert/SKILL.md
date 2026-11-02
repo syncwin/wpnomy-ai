@@ -3,13 +3,13 @@ name: wpnomy-elementor-classic-expert
 description: 'Maintain and edit existing Elementor V3 pages and theme builder parts: flexbox and grid containers, classic widgets, Global Colors and Global Fonts. Maintain-only: new pages are built in V4 or Bricks. Use when an existing Elementor 3.x page, part or export needs a change, when the user says V3, classic, containers or widgets about existing work, or when wpnomy routes here after the version question. Covers container structure, semantic HTML tags, responsive control keys, the control traps that fail silently, and the classless globals-only styling doctrine V3 requires. Do NOT use for Atomic Elements, Global Classes, Variables or Components, which are wpnomy-elementor-atomic-expert.'
 license: MIT
 metadata:
-  displayName: "wpnomy Elementor Classic Expert"
-  version: "0.1.0"
+  displayName: "WPnomy Elementor Classic Expert"
+  version: "0.1.1"
   author: "@wasimness"
   company: "SyncWin"
 ---
 
-# wpnomy Elementor Classic Expert (V3)
+# WPnomy Elementor Classic Expert (V3)
 
 V3 rules only; shared intake and handover live in the `wpnomy` router.
 

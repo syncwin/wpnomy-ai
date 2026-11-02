@@ -3,13 +3,13 @@ name: wpnomy
 description: Entry point for every WordPress build with the house black box policy, on any site. Use whenever the user asks to build, design, rebuild, restyle or extend a page, template, header, footer, single, archive, loop item or component in Bricks, Elementor (V4 or V3), Oxygen 6 or Builderius; attaches a mockup or screenshot and wants it built in a page builder; uploads a builder export and wants changes; asks about global classes, variables, components, breakpoints, query loops, the Atomic Framework or Atomic Wireframe; or needs custom fields, post types or taxonomies with ACF or Meta Box and their values on a page. Trigger even when they never name the builder but mention their page builder, a template import or building on staging. Routes to wpnomy-bricks-expert, wpnomy-elementor-atomic-expert (V4), wpnomy-elementor-classic-expert (V3 edits), wpnomy-oxygen-expert, wpnomy-builderius-expert, wpnomy-acf-expert and wpnomy-metabox-expert.
 license: MIT
 metadata:
-  displayName: "wpnomy"
-  version: "0.1.0"
+  displayName: "WPnomy"
+  version: "0.1.1"
   author: "@wasimness"
   company: "SyncWin"
 ---
 
-# wpnomy: Router
+# WPnomy: Router
 
 Routes between the expert skills and owns everything they share: intake, design standards, JSON delivery, handover. Carries no version-specific build rules of its own.
 
