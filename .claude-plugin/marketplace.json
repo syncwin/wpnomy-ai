@@ -11,6 +11,7 @@
     {
       "name": "wpnomy",
       "displayName": "WPnomy",
+      "version": "0.1.4",
       "description": "Build WordPress sites the right way from the start: one expert skill per plugin (Bricks, Elementor V4 and V3, Oxygen 6, Builderius, ACF, Meta Box) under one black box policy, with Atomic Framework variables, BEM classes, native elements and front-end checks.",
       "source": "./",
       "homepage": "https://wpnomy.com/",
