@@ -4,7 +4,7 @@ description: 'Maintain and edit existing Elementor V3 pages and theme builder pa
 license: MIT
 metadata:
   displayName: "WPnomy Elementor Classic Expert"
-  version: "0.1.2"
+  version: "0.1.3"
   author: "@wasimness"
   company: "SyncWin"
 ---

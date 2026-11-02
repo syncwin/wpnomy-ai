@@ -4,7 +4,7 @@ description: Design ACF schemas and bind ACF data into pages. Plans and generate
 license: MIT
 metadata:
   displayName: "WPnomy ACF Expert"
-  version: "0.1.2"
+  version: "0.1.3"
   author: "@wasimness"
   company: "SyncWin"
 ---

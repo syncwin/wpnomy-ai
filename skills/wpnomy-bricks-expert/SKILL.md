@@ -4,7 +4,7 @@ description: Build and edit Bricks Builder pages, templates, components, forms a
 license: MIT
 metadata:
   displayName: "WPnomy Bricks Expert"
-  version: "0.1.2"
+  version: "0.1.3"
   author: "@wasimness"
   company: "SyncWin"
 ---

@@ -1,6 +1,6 @@
 # WPnomy
 
-**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.2 · **License:** MIT · **Home:** https://wpnomy.com/
+**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.3 · **License:** MIT · **Home:** https://wpnomy.com/
 
 Claude skills for building WordPress sites the right way from the start. One expert skill per plugin, all under one house black box policy: native elements, Atomic Framework variables, BEM classes, the plugin's own component mechanism, and a front-end check before anything is called done.
 

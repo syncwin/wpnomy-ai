@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (2026-11-02)
+
+- Plugin icon (`assets/icon.png`, `assets/icon.svg`).
+
 ## 0.1.2 (2026-11-02)
 
 ### Changed
