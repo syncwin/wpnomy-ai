@@ -1,6 +1,6 @@
 # WPnomy
 
-**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.1 · **License:** MIT · **Home:** https://wpnomy.com/
+**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.2 · **License:** MIT · **Home:** https://wpnomy.com/
 
 Claude skills for building WordPress sites the right way from the start. One expert skill per plugin, all under one house black box policy: native elements, Atomic Framework variables, BEM classes, the plugin's own component mechanism, and a front-end check before anything is called done.
 
@@ -37,7 +37,7 @@ Example: `/wpnomy:wpnomy add an Event post type with date and venue using Meta B
 ## Install
 
 - **claude.ai, desktop app, mobile (auto-updates):** Settings → Customize → Plugins → Add → Add marketplace → `syncwin/wpnomy-ai`, then install WPnomy.
-- **Claude Code terminal:** `claude plugin marketplace add syncwin/wpnomy-ai`, then `claude plugin install wpnomy@wpnomy`.
+- **Claude Code terminal:** `claude plugin marketplace add syncwin/wpnomy-ai`, then `claude plugin install wpnomy@syncwin-wpnomy`.
 - **Undo:** uninstall the plugin from the same place.
 
 Site work runs through Novamira (MCP connector or CLI). Without site access the skills deliver the plan and exact output, marked unverified.

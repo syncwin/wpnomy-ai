@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "wpnomy",
+  "name": "syncwin-wpnomy",
   "description": "wpnomy: Claude skills for building WordPress sites the right way.",
   "owner": {
     "name": "SyncWin",
