@@ -158,8 +158,8 @@ def main():
     if root == "62.5%":
         warnings.append("Root font size is 62.5%: every rem value has been multiplied by 1.6. The Root theme style must set html font-size to 62.5% or every size renders 1.6x too small.")
 
-    if prefix and not re.fullmatch(r"sw-[a-z0-9]+", prefix):
-        warnings.append(f"Class prefix `{prefix}` is not company plus site code (`sw-<site>`, e.g. `sw-md`). House rule: ask before using it.")
+    if prefix and not re.fullmatch(r"[a-z][a-z0-9]*(-[a-z0-9]+)*", prefix):
+        warnings.append(f"Class prefix `{prefix}` is not lowercase kebab-case (e.g. `acme-md` or `md`). Ask before using it.")
     if not prefix:
         warnings.append("No class prefix set in the project. Classes would export as `awf-`. Ask for the prefix.")
 

@@ -4,7 +4,7 @@ description: Build and edit Bricks Builder pages, templates, components, forms a
 license: MIT
 metadata:
   displayName: "WPnomy Bricks Expert"
-  version: "0.1.3"
+  version: "0.1.4"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -51,7 +51,7 @@ The three questions: can the exact output HTML be described, can every part be s
 |---|---|
 | Tokens | Global variables (`var(--space-m)`) |
 | Class native fields | The global class's style controls (`_typography`, `_padding`, `_background`, `_border`, `_gap`...), with breakpoint and pseudo suffixes (`_padding:bp768`, `_background:hover`) |
-| Class custom CSS | The class's own custom CSS, selector `.sw-md-block` |
+| Class custom CSS | The class's own custom CSS, selector `.md-block` |
 | Component | Bricks component, `class` property with options and `replace: true` for variants |
 | Element native fields (placement only) | Placement controls as the live element schema names them (`_order`, `_alignSelf`, `_gridItemJustifySelf`, `_zIndex`, `_aspectRatio`, `_position` with `_top`...), and this instance's own background image |
 | Element custom CSS, short (placement only) | `_cssCustom` as a full rule with the persisted selector: `#brxe-<id>` on a page element, `.brxe-<id>` inside a component, the custom id if `_cssId` is set (`%root%` is the editor's shorthand for the same). Grid placement with no field and scoped token overrides go here: `#brxe-<id> {\n  grid-column: span 2;\n  --card-cols: 4;\n}` |
@@ -65,7 +65,7 @@ Rules that follow:
 - Interactions only where no CSS or native HTML route exists (popup opener, offcanvas toggle, load more), because each adds inline `data-interactions` JSON and its own JS. Hover and focus are class pseudo states.
 - Element conditions are render logic (a missing field, a user state), never styling and never responsive visibility.
 - Never `!important`. Fix the cascade order instead (see `references/elements-and-pages.md`).
-- Class prefix is company plus site code, `sw-<site>` (router, Naming), read from the Atomic Wireframe project's `classPrefix` every run; never assume it.
+- Class prefix is `<prefix>` (router, Naming: ask first, site code only as the default), read from the Atomic Wireframe project's `classPrefix` every run; never assume it.
 - `js-` hook classes go in the element's plain `_cssClasses`, not as global classes.
 - The Code element and `execute-php` only with an explicit yes.
 

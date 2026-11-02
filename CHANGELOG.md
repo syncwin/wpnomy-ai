@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4 (2026-11-02)
+
+### Changed
+- Class prefix is asked for once per site (usually the user's company or brand code plus the site code) and recorded in the site canon; the site's short code is only the default when no prefix is given. No SyncWin prefix is built in any more.
+
 ## 0.1.3 (2026-11-02)
 
 - Plugin icon (`assets/icon.png`, `assets/icon.svg`).

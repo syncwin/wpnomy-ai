@@ -4,7 +4,7 @@ description: 'Maintain and edit existing Elementor V3 pages and theme builder pa
 license: MIT
 metadata:
   displayName: "WPnomy Elementor Classic Expert"
-  version: "0.1.3"
+  version: "0.1.4"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -37,7 +37,7 @@ V3 has no real class system and no native variables. Forcing a framework workflo
 
 If a needed colour or font is not in the globals, stop and ask. A one-off hex is the exact failure this rule prevents.
 
-Exception: a data table or similar block that genuinely needs markup lives in an HTML widget (see Widgets), styled in page-level custom CSS with `sw-<site>-` classes and confined to that block.
+Exception: a data table or similar block that genuinely needs markup lives in an HTML widget (see Widgets), styled in page-level custom CSS with `<prefix>-` classes and confined to that block.
 
 The Atomic Framework does not apply here. It depends on V4 Variables and Classes, and a V3 page cannot read them. Do not import its CSS onto a V3 page to get around the doctrine above.
 
@@ -67,7 +67,7 @@ Each of these fails silently rather than erroring, which is why they are worth m
 
 Prefer native. For an accordion or FAQ, use the Nested Accordion widget (the house default). One FAQPage source per page: leave its FAQ schema off wherever the data plugin or the SEO plugin emits FAQPage.
 
-Reserve the HTML widget for markup no native widget can produce. Put its styling in page-level custom CSS rather than inline, and prefix any class `sw-<site>-` (company plus site code, router Naming) so it cannot collide with theme or plugin classes.
+Reserve the HTML widget for markup no native widget can produce. Put its styling in page-level custom CSS rather than inline, and prefix any class `<prefix>-` (router Naming: ask first) so it cannot collide with theme or plugin classes.
 
 ## Direct-write notes
 

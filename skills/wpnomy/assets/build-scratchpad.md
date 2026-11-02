@@ -118,7 +118,7 @@ Placement one-offs only (`styling-and-code.md`, steps 5 and 6). A row that repea
 
 ## Code placed outside the builder
 
-FluentSnippets by default (`sw-<site>-<purpose>`), plus the V4 framework layer in Elementor's site-wide CSS.
+FluentSnippets by default (`<prefix>-<purpose>`), plus the V4 framework layer in Elementor's site-wide CSS.
 
 | What | Where it lives | What it does |
 |---|---|---|

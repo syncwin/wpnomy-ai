@@ -48,7 +48,7 @@ Preview cannot simulate repeater rows, terms or users. Those are verified in the
 - Never loop a Template element inside another loop; wrap the content in a block.
 - Nested loops do not inherit the outer context automatically.
 - Load more: an interaction `{ "trigger": "click", "action": "loadMore", "loadMoreQuery": "<queryElementId>" }`.
-- Custom query logic goes in the `bricks/posts/query_vars` hook in a FluentSnippets PHP snippet (`sw-<site>-query-vars`), scoped by its `$element_id` argument (the 6-character id), keeping existing `meta_query` and `tax_query`. Never Custom Query PHP in the builder.
+- Custom query logic goes in the `bricks/posts/query_vars` hook in a FluentSnippets PHP snippet (`<prefix>-query-vars`), scoped by its `$element_id` argument (the 6-character id), keeping existing `meta_query` and `tax_query`. Never Custom Query PHP in the builder.
 - `cacheQueryLoops` keeps results for one minute and helps only with a persistent object cache.
 - Posts loops: add `ID` as a secondary orderby; only one main-query loop per page; turn on "Disable query merge" in headers, footers and sidebars.
 - Pagination, load more and filters rely on loop markers: the server adds a `data-brx-loop-start` attribute to the loop wrapper and front-end JS turns it into a `<!--brx-loop-start-<queryId>-->` comment. Check both (page source and live DOM). An optimiser that strips or rewrites either breaks them silently.

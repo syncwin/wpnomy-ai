@@ -1,6 +1,6 @@
 # WPnomy
 
-**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.3 · **License:** MIT · **Home:** https://wpnomy.com/
+**Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.4 · **License:** MIT · **Home:** https://wpnomy.com/
 
 Claude skills for building WordPress sites the right way from the start. One expert skill per plugin, all under one house black box policy: native elements, Atomic Framework variables, BEM classes, the plugin's own component mechanism, and a front-end check before anything is called done.
 
@@ -48,7 +48,7 @@ Site work runs through Novamira (MCP connector or CLI). Without site access the 
 - `skills/wpnomy/references/black-box-policy.md`: what to use, what never to use.
 - `skills/wpnomy/references/styling-and-code.md`: where every style and piece of code lives.
 
-Class names use company plus site code (`sw-<site>-block__element`, `sw` for SyncWin), read from the Atomic Wireframe project's `classPrefix` or the site canon.
+Class names use your own prefix (`<prefix>-block__element`). WPnomy asks for it once per site (usually your company or brand code plus the site's short code, like `acme-md`), reads it from the Atomic Wireframe project's `classPrefix` when set, and falls back to the site's short code only when you leave it empty.
 
 ## Tests
 

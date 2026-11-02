@@ -34,7 +34,7 @@
    "id": 5,
    "skill": "wpnomy-elementor-classic-expert",
    "prompt": "add a comparison table to this page, 6 columns, needs to work on mobile. here's the export",
-   "expected_output": "Keeps the export in V3. Builds the table as markup in an HTML widget rather than the native table widget, with a scrollable wrapper and a stacked mobile layout, styled by sw-<site>- classes in page-level custom CSS. Colours resolve to Global Colors.",
+   "expected_output": "Keeps the export in V3. Builds the table as markup in an HTML widget rather than the native table widget, with a scrollable wrapper and a stacked mobile layout, styled by <prefix>- classes in page-level custom CSS. Colours resolve to Global Colors.",
    "files": []
   },
   {
@@ -69,7 +69,7 @@
    "id": 10,
    "skill": "wpnomy-bricks-expert",
    "prompt": "build the city hub hero and the FAQ from the wireframe library as a bricks section on the city page, the FAQ answers come from the acf repeater",
-   "expected_output": "Pulls the organisms with atomic-wireframe/get-block, applies the project's sw-<site> prefix and renames, moves inline styles into classes, converts with convert-html-css-to-bricks-data and reuses existing classes. Builds the FAQ as a nested accordion with h3 questions, loops the repeater with the runtime objectType key, previews every tag, hides the section when the repeater is empty, and verifies logged out on a complete and a sparse city.",
+   "expected_output": "Pulls the organisms with atomic-wireframe/get-block, applies the project's class prefix and renames, moves inline styles into classes, converts with convert-html-css-to-bricks-data and reuses existing classes. Builds the FAQ as a nested accordion with h3 questions, loops the repeater with the runtime objectType key, previews every tag, hides the section when the repeater is empty, and verifies logged out on a complete and a sparse city.",
    "files": []
   },
   {

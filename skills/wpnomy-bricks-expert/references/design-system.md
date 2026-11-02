@@ -88,7 +88,7 @@ Output uses `font-display: swap`. Turning Google Fonts off (`disableGoogleFonts`
 
 ## Dark mode
 
-Off unless the brief asks. If asked, the framework's `[data-theme="dark"]` block from `plan.json` goes in one place only (a FluentSnippets snippet, `sw-<site>-dark-mode`), and the toggle that sets `data-theme` is a decision to raise. Never two dark-mode mechanisms.
+Off unless the brief asks. If asked, the framework's `[data-theme="dark"]` block from `plan.json` goes in one place only (a FluentSnippets snippet, `<prefix>-dark-mode`), and the toggle that sets `data-theme` is a decision to raise. Never two dark-mode mechanisms.
 
 ## Changing a token later
 

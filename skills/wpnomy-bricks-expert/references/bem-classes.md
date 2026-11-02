@@ -4,8 +4,8 @@ The naming follows the Atomic Wireframe block library, which is the house refere
 
 ## The prefix
 
-- Read `classPrefix` from `atomic-wireframe/get-project` every run. The library's `awf-btn` exports as `sw-<site>-btn`.
-- It must be company plus site code, `sw-<site>` (for example `sw-md`). A prefix without a site code, or not starting with `sw-`, is a question, not a value to use.
+- Read `classPrefix` from `atomic-wireframe/get-project` every run. The library's `awf-btn` exports as `<prefix>-btn`.
+- If the project has none, settle it with the router's Naming rule (ask first; the site's short code only as the default). A missing or malformed prefix is a question, not a value to use.
 - Per-class renames (`class_renames`) from the project apply on top. Use the renamed name exactly.
 - Classes already on a site under another convention are matched when editing that old work, and never adopted for new work.
 
@@ -13,11 +13,11 @@ The naming follows the Atomic Wireframe block library, which is the house refere
 
 | Part | Form | Library examples |
 |---|---|---|
-| Block | `sw-<site>-<block>` | `btn`, `card`, `section`, `stat-grid`, `faq`, `footer` |
+| Block | `<prefix>-<block>` | `btn`, `card`, `section`, `stat-grid`, `faq`, `footer` |
 | Element | `<block>__<element>` | `section__head`, `section__title`, `footer__bottom`, `faq__question` |
 | Modifier | `<block>--<modifier>` or `<block>__<element>--<modifier>` | `btn--primary`, `card--flat`, `section__head--tight` |
 | State | `is-<state>`, unprefixed | `is-active`, `is-featured`, `is-on` |
-| Utility | `sw-<site>-<utility>` | `bg-surface`, `bg-accent` |
+| Utility | `<prefix>-<utility>` | `bg-surface`, `bg-accent` |
 
 Rules the library follows, which the build follows too:
 
@@ -28,7 +28,7 @@ Rules the library follows, which the build follows too:
 - **States are styled only with their block.** `.pill.is-active`, never `.is-active` alone. States are set by an interaction, a condition or the element's own behaviour, not by hand.
 - **Utilities are rare and single-purpose.** A surface or background switch, nothing that mixes layout and colour.
 - **A name is never reused for a different pattern.** The library split `list-head` from `section__head` because one name doing two layouts broke both. Check the existing class list before naming.
-- **No bare inner classes.** A few library atoms style unprefixed children (`.checkbox .box`, `.toggle .knob`, `.track`, `.dot`). In Bricks these become proper elements: `sw-<site>-checkbox__box`, `sw-<site>-toggle__knob`.
+- **No bare inner classes.** A few library atoms style unprefixed children (`.checkbox .box`, `.toggle .knob`, `.track`, `.dot`). In Bricks these become proper elements: `<prefix>-checkbox__box`, `<prefix>-toggle__knob`.
 - **Every value reads a token.** The library CSS still carries some literal sizes (`padding:1.25rem`, `gap:2.5rem`, `max-width:560px`). When porting a rule into Bricks, map each literal to the nearest token (`space-m`, `space-xl`, `max-width-s`) and log the mapping. Never carry the literal.
 
 ## Layout primitives
@@ -50,7 +50,7 @@ In Bricks, a `section` element plus its Bricks `container` already does part of 
 
 1. **Look first.** `bricks/list-global-classes` (or `get-design-context`). Names are unique site-wide; `btn` and `button` are the same resource.
 2. **Native controls first.** Class settings use the element-setting shape: `_padding`, `_typography`, `_background`, `_border`, `_gap`, with values from variables. Responsive values use the breakpoint key suffix (`_padding:bp768`); hover and focus use pseudo suffixes (`_background:hover`).
-3. **Class custom CSS for the rest.** Compound states (`.sw-md-pill.is-active`), `:focus-visible` rings with the framework's two-band ring, `color-mix()` borders, `:not()`. Selector is the class itself; never an element id.
+3. **Class custom CSS for the rest.** Compound states (`.md-pill.is-active`), `:focus-visible` rings with the framework's two-band ring, `color-mix()` borders, `:not()`. Selector is the class itself; never an element id.
 4. **Mobile-first.** The unsuffixed value is the smallest screen. The library's few `max-width` media queries are rewritten as min-width values on the matching breakpoint key.
 5. **Check the modifier wins.** Bricks writes each class as a single selector. If a modifier loses to its base on the front end, move that rule into the modifier's custom CSS as `.<block>.<block>--<mod>`, as the library does. Never `!important`.
 6. **Render before committing in bulk.** `bricks/render-elements` with one element carrying the class shows the emitted CSS.
