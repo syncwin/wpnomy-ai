@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.5] - 2026-11-03
+### Changed
+- Metadata to the AI Extender standard: author company, plugin metadata block, release stage, listing links, and display name, version, author, company and license on every skill and agent. No behaviour change.
+
 ## 0.1.4 (2026-11-02)
 
 ### Changed

@@ -3,10 +3,10 @@ name: wpnomy-oxygen-expert
 description: Build and edit Oxygen 6 pages, templates, headers, footers, components and design systems under the house black box policy, and map Atomic Framework variables, classes and breakpoints into Oxygen. Use when the site runs Oxygen 6 (the Oxygen plugin on the Breakdance engine), when the user says Oxygen, Oxygen 6, Oxygen template, Oxygen component, Oxygen variables, selectors, custom breakpoints, Breakdance Elements for Oxygen, Breakdance Forms, Oxygen Doctor, or pastes Oxygen JSON, or when the wpnomy router sends Oxygen work here. Covers native elements, variables and collections, selectors and classes, components, breakpoints, dynamic data from ACF or Meta Box, the form fallback, and front-end checks. Not for Oxygen Classic (4.x), Breakdance itself, Bricks or Elementor.
 license: MIT
 metadata:
-  displayName: WPnomy Oxygen Expert
-  version: 0.1.4
+  displayName: "WPnomy Oxygen Expert"
+  version: "0.1.5"
   author: "@wasimness"
-  company: SyncWin
+  company: "SyncWin"
 ---
 
 # WPnomy Oxygen Expert
