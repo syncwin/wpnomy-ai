@@ -4,7 +4,7 @@ description: Build and edit Elementor V4 pages and theme builder parts with Atom
 license: MIT
 metadata:
   displayName: "WPnomy Elementor Atomic Expert"
-  version: "0.1.5"
+  version: "0.1.6"
   author: "@wasimness"
   company: "SyncWin"
 ---

@@ -99,6 +99,11 @@ def main():
     meta = data.get("meta", {})
     cats = {c["id"]: c["name"] for c in data.get("categories", [])}
     toks = data["variables"]
+    # The export is untrusted text that becomes CSS: refuse anything that could break out of a declaration.
+    bad = [t.get("name") for t in toks if not re.fullmatch(r"[A-Za-z0-9_-]+", str(t.get("name", "")))
+           or any(re.search(r"[{};<>]|/\*|\*/|@import", str(t.get(k) or "")) for k in ("value", "darkValue"))]
+    if bad:
+        sys.exit(f"Refusing to write CSS: unsafe token name or value in {bad[:5]}")
     out = Path(a.outdir)
     out.mkdir(parents=True, exist_ok=True)
 

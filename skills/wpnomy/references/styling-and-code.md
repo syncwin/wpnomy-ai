@@ -61,7 +61,7 @@ DRY is enforced by promotion, not by hoping:
 - One snippet per concern, named `<prefix>-<purpose>` (`md-utilities`, `md-dark-mode`, `md-query-vars`), with a header comment: what it does, where it applies, who added it and when.
 - Load only where needed: FluentSnippets' location and condition settings scope CSS and JS to the pages, post types or templates that use them. Site-wide only when every page needs it.
 - CSS reads tokens only and stays flat and low-specificity (one class deep where possible); JS is vanilla, deferred, and scoped to a `js-` class.
-- PHP snippets follow WordPress coding and security standards (sanitize input, escape output, capability checks) and are tested on staging before live.
+- PHP snippets follow WordPress coding and security standards and are tested on staging before live: sanitize input on the way in, escape on the way out (`esc_html`, `esc_attr`, `esc_url`, `wp_kses_post`), `current_user_can()` before any privileged action, a nonce (`wp_nonce_field` / `check_admin_referer` / `check_ajax_referer`) on every state-changing form or AJAX call, a `permission_callback` on every REST route, `$wpdb->prepare()` for any query with input, no `eval`, `unserialize` of input or remote includes, and no secrets in the snippet.
 - Back up the snippet before changing it on a live site; one snippet change at a time, verified on the front end.
 
 ## CSS standards
