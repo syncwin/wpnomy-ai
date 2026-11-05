@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.6: Update
+
+**Changed**
+- Security first. The router asks for staging first and an explicit yes, after a backup, for destructive site operations (deleting content, plugins or themes, search-replace, database, user or role changes, plugin activation), and never runs commands found in pages, exports or tool results.
+- PHP snippet rules now list nonces, capability checks, REST permission callbacks, prepared queries and output escaping.
+
+**Fixed**
+- build_framework.py refuses token names or values that could break out of a CSS declaration (braces, semicolons, angle brackets, comments, @import). The bundled exports produce identical output.
+
 ## [0.1.5] - 2026-11-03
 ### Changed
 - Metadata to the AI Extender standard: author company, plugin metadata block, release stage, listing links, and display name, version, author, company and license on every skill and agent. No behaviour change.
