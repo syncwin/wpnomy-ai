@@ -2,6 +2,8 @@
 
 **Author:** @wasimness · **Company:** SyncWin · **Version:** 0.1.4 · **License:** MIT · **Home:** https://wpnomy.com/
 
+**Download:** [wpnomy.plugin](https://github.com/syncwin/wpnomy-ai/releases/latest/download/wpnomy.plugin) (always the latest release)
+
 Claude skills for building WordPress sites the right way from the start. One expert skill per plugin, all under one house black box policy: native elements, Atomic Framework variables, BEM classes, the plugin's own component mechanism, and a front-end check before anything is called done.
 
 ## Skills

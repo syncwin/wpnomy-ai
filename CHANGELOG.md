@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+- GitHub Actions workflow `release-plugin.yml` builds `wpnomy.plugin` and attaches it to each release for a one-click download link (README).
+
 ## 0.1.6: Update
 
 **Changed**
