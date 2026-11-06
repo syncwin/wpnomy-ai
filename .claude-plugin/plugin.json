@@ -1,7 +1,7 @@
 {
   "name": "wpnomy",
   "displayName": "WPnomy",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Build WordPress sites the right way from the start: one expert skill per plugin (Bricks, Elementor V4 and V3, Oxygen 6, Builderius, ACF, Meta Box) under one house black box policy, with Atomic Framework variables, BEM classes, native elements and front-end checks.",
   "author": {
     "name": "@wasimness",
@@ -26,7 +26,7 @@
   ],
   "metadata": {
     "displayName": "WPnomy",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "releaseStage": "beta",
     "author": "@wasimness",
     "company": "SyncWin",

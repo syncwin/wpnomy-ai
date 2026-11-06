@@ -4,7 +4,7 @@ description: Entry point for every WordPress build with the house black box poli
 license: MIT
 metadata:
   displayName: "WPnomy"
-  version: "0.1.6"
+  version: "0.1.7"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -112,7 +112,7 @@ Copy `assets/build-scratchpad.md` at the start of every run and keep it current.
 
 **Version independence.** V3, V4 and Bricks implementations stay separate. Never migrate, merge or alter an existing production implementation unless explicitly asked. The V4 path exists to support gradual adoption without putting live pages at risk.
 
-**Research before implementing.** If any element, control, tag or behaviour is unfamiliar, research it before writing anything. V4 moves fast and the feature set at build time may differ from what these files describe. Reference set: `elementor.com/help/build-with-the-editor/v4-editor/`, `elementor.com/help/components-2/`, `developers.elementor.com/`; for Bricks, the live `bricks/get-element-schema` first, then `academy.bricksbuilder.io`. If uncertainty remains, ask for details or a documentation link. Never guess a control name, a tag format or a schema shape.
+**Research before implementing.** Before choosing an approach, file, tool, config or dependency, check current official docs and widely recommended, secure practice; cite the source in the docs or brief; mark anything unverified; never guess. Keep research scoped to what the task needs (smallest complete change). If any element, control, tag or behaviour is unfamiliar, research it before writing anything. V4 moves fast and the feature set at build time may differ from what these files describe. Reference set: `elementor.com/help/build-with-the-editor/v4-editor/`, `elementor.com/help/components-2/`, `developers.elementor.com/`; for Bricks, the live `bricks/get-element-schema` first, then `academy.bricksbuilder.io`. If uncertainty remains, ask for details or a documentation link. Never guess a control name, a tag format or a schema shape.
 
 **Naming.** Atomic Framework token names pass through exactly as the framework writes them; the framework owns its namespace and nothing here renames it. **Class prefix: ask first.** Every BEM class this plugin invents, on any builder, is `<prefix>-<block>`. The prefix belongs to whoever owns the work, so it is settled per site, in this order: (1) the Atomic Wireframe project's `classPrefix`, or the prefix already recorded in the scratchpad's site canon; (2) otherwise ask once, before creating any class: "Which class prefix should new classes use on this site? Usually your company or brand code plus the site's short code, for example `acme-md`. Leave it empty to use the site's short code alone."; (3) only when the answer is empty, default to the site's short code (`md-card__title`). Record the answer in the site canon so later runs reuse it. Never assume a prefix from memory or carry one from another site, client or employer. The site code names the brand or person, never the domain, so a domain move changes no class. A component or class carried to another site is renamed to that site's prefix on the way in. State classes (`is-<state>`, always paired with their block) and `js-` hook classes stay unprefixed. Helper variables and FluentSnippets names use the same prefix (`<prefix>-<purpose>`, `styling-and-code.md`). An existing site's own older prefix is matched when editing that old work and never adopted for new work.
 

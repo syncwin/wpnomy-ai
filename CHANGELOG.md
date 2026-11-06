@@ -5,6 +5,11 @@
 ### Added
 - GitHub Actions workflow `release-plugin.yml` builds `wpnomy.plugin` and attaches it to each release for a one-click download link (README).
 
+## 0.1.7: Update
+
+**Changed**
+- Standing rule: research before building. Check current official docs and widely recommended, secure practice before choosing an approach, file, tool, config or dependency; cite the source; mark anything unverified; never guess; keep research scoped to the task.
+
 ## 0.1.6: Update
 
 **Changed**
