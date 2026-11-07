@@ -59,3 +59,10 @@ The black box policy is `black-box-policy.md` (what to use, what never to use, t
 ## 7. Hand-over checklist
 
 Use the router's "Before handing back" list. Report each line PASS, FAIL or NOT RUN; a check that did not run is never PASS.
+
+## 8. Cross-cutting rules (every expert)
+
+- **Native first.** Use the plugin's own features first and check its official docs; write custom code only when nothing native exists.
+- **Scratchpad after each task.** Close with a tight structured scratchpad (headings, lists, tables; nothing repeated) of what was done.
+- **Scripts.** A skill that runs a bundled script copies it once per session into the working folder (for example `./tools/`) and runs it from there. Never put a `/root/.claude` or `~/.claude` path in a shell command.
+- **Novamira PHP and text edits.** Never `preg_replace` with replacement text containing `$` figures (prices, amounts, `$1`-like digits); they are read as backreferences. Use `str_replace` or `preg_replace_callback`, then re-read the figures.

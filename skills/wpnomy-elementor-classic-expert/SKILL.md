@@ -4,7 +4,7 @@ description: 'Maintain and edit existing Elementor V3 pages and theme builder pa
 license: MIT
 metadata:
   displayName: "WPnomy Elementor Classic Expert"
-  version: "0.1.7"
+  version: "0.1.8"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -22,6 +22,8 @@ Open the router's build scratchpad at the start of every edit and log each chang
 ## Pairs with
 
 `elementor-build-page` for building through Novamira, and `kadence-build-page` where the work reaches theme settings rather than the page. Use them for mechanics only (router, Novamira skills).
+
+Use Elementor's native features first (check the official Elementor docs); custom code only when nothing native exists. UI or functions that do not depend on Elementor go in one global place and power the whole site from there: FluentSnippets for functions, Elementor Code Snippets where relevant.
 
 ## Styling doctrine
 

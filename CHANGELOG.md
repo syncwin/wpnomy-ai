@@ -5,6 +5,14 @@
 ### Added
 - GitHub Actions workflow `release-plugin.yml` builds `wpnomy.plugin` and attaches it to each release for a one-click download link (README).
 
+## 0.1.8: Update
+
+**Added**
+- House rules section 8: native features first, a tight scratchpad after each task, bundled scripts copied once per session into the working folder (never a `~/.claude` path in a shell command), and no `preg_replace` with `$` figures in replacement text (Novamira edits).
+- Elementor experts (V4, V3): native features first; non-Elementor UI and functions go in one global place (FluentSnippets, Elementor Code Snippets).
+- Bricks expert: mobile-first; style settings need breakpoint keys (`:bp360`), unsuffixed keys render nothing.
+- ACF expert: learn the site's tech stack and tune Novamira settings before building.
+
 ## 0.1.7: Update
 
 **Changed**

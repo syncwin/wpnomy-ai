@@ -4,7 +4,7 @@ description: Build and edit Builderius templates, components and global settings
 license: MIT
 metadata:
   displayName: "WPnomy Builderius Expert"
-  version: "0.1.7"
+  version: "0.1.8"
   author: "@wasimness"
   company: "SyncWin"
 ---
