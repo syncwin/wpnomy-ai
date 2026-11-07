@@ -4,7 +4,7 @@ description: Entry point for every WordPress build with the house black box poli
 license: MIT
 metadata:
   displayName: "WPnomy"
-  version: "0.1.7"
+  version: "0.1.8"
   author: "@wasimness"
   company: "SyncWin"
 ---

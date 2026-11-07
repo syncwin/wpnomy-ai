@@ -4,7 +4,7 @@ description: Design ACF schemas and bind ACF data into pages. Plans and generate
 license: MIT
 metadata:
   displayName: "WPnomy ACF Expert"
-  version: "0.1.7"
+  version: "0.1.8"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -23,6 +23,8 @@ On a Bricks site, `references/binding.md` still decides the route (bound value o
 On Oxygen 6, bind through Oxygen's native ACF dynamic data (`AcfField` family, see `wpnomy-oxygen-expert`); on Builderius, confirm its ACF support in the builder on the site first (`wpnomy-builderius-expert`). Build rules for every job: `${CLAUDE_PLUGIN_ROOT}/skills/wpnomy/references/house-rules.md`. Choosing between ACF and Meta Box: `wpnomy-metabox-expert` §"Meta Box or ACF".
 
 Use ACF's native capabilities first. Do not rebuild in code what ACF already does.
+
+Before any build, learn the site's existing tech stack (theme, builder, frameworks, snippets, active plugins) and tune the Novamira settings so nothing breaks and the site's setup and design language are respected.
 
 ## Delivery model
 

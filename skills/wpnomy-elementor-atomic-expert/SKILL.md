@@ -4,7 +4,7 @@ description: Build and edit Elementor V4 pages and theme builder parts with Atom
 license: MIT
 metadata:
   displayName: "WPnomy Elementor Atomic Expert"
-  version: "0.1.7"
+  version: "0.1.8"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -31,6 +31,8 @@ Run before placing any element. Full statement: the router's `references/black-b
 | Never | Classic composite widgets (icon box, image box, CTA, pricing, testimonial, counter, progress, countdown, hero, social icons, star rating, author box, post info), add-on pack widgets, legacy Section, Column or Inner Section, motion and entrance effects, per-element hover effects, display conditions for responsive visibility, Text Editor holding layout markup |
 
 1. Can the element's exact output HTML be described? 2. Can every part be styled by our classes and variables? 3. Would it survive a copy to another builder as HTML plus classes? Any no: skip it, or log it as a builder-bound exception.
+
+Use Elementor's native features first (check the official Elementor docs); custom code only when nothing native exists. UI or functions that do not depend on Elementor go in one global place and power the whole site from there: FluentSnippets for functions, Elementor Code Snippets where relevant.
 
 ## Check the install first
 

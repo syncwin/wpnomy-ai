@@ -4,7 +4,7 @@ description: Build and edit Bricks Builder pages, templates, components, forms a
 license: MIT
 metadata:
   displayName: "WPnomy Bricks Expert"
-  version: "0.1.7"
+  version: "0.1.8"
   author: "@wasimness"
   company: "SyncWin"
 ---
@@ -28,6 +28,8 @@ The **Atomic Wireframe** plugin holds the site's design: the 80-token Atomic Fra
 - Never change an Atomic Wireframe project (tokens, settings, classes, pages) without an explicit yes. Its design is the user's product.
 - Never let Bricks regenerate a scale the framework owns. Details in `references/design-system.md`.
 - If the plugin is absent, ask for a framework export before inventing any token.
+
+Build mobile-first. Style settings need breakpoint keys (base, then `:bp360` and so on); unsuffixed keys save but render nothing.
 
 ## Black box gate
 
