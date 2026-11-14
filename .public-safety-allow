@@ -1,0 +1,14 @@
+# False positives for scan_secrets.py. Only exact, intentional values, each tied to the file that holds it.
+# Format: <rule>:<path-glob>[:<value-substring>]
+# The plugin's public support address (it is the published contact, not personal data):
+email:README.md:support@syncwin.com
+email:adapters/claude/README.md:support@syncwin.com
+email:.claude-plugin/marketplace.json:support@syncwin.com
+email:adapters/claude/.claude-plugin/plugin.json:support@syncwin.com
+email:.public-safety-allow:support@syncwin.com
+# Git history only (old commits and old paths before the single-branch move, no history rewrite; the public contact, a folder path and a CSS variable name, no credential involved):
+email:.claude-plugin/plugin.json:support@syncwin.com
+drive-path:AGENTS.md:A:\Automation
+drive-path:AGENTS.md:D:\SyncWin
+# A manifest field named "token" holding a CSS custom property name such as --space-2xl (current tree and history, no credential):
+*:*variables-manifest.json:"token": "--

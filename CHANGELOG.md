@@ -1,9 +1,21 @@
 # Changelog
 
-## [Unreleased]
+## 0.2.0: Directory-compliant layout
 
-### Added
-- GitHub Actions workflow `release-plugin.yml` builds `wpnomy.plugin` and attaches it to each release for a one-click download link (README).
+**Changed**
+- Single-branch layout: the shipped plugin is `adapters/claude/` (Markdown, JSON and the icon only); the marketplace entry at the repo root points at it. Docs are kept identical in both places.
+- Skills renamed to drop the `-expert` suffix: `wpnomy-acf-expert` is now `wpnomy-acf`, `wpnomy-bricks-expert` is `wpnomy-bricks`, `wpnomy-builderius-expert` is `wpnomy-builderius`, `wpnomy-elementor-atomic-expert` is `wpnomy-elementor-atomic`, `wpnomy-elementor-classic-expert` is `wpnomy-elementor-classic`, `wpnomy-metabox-expert` is `wpnomy-metabox`, `wpnomy-oxygen-expert` is `wpnomy-oxygen`. Commands become `/wpnomy:wpnomy-<tool>`. Every reference, the router and the evals are updated.
+- Router: the routing section is now a routing table with trigger phrases, tie-break rules and a closed default question, checked by `evals/router/cases.json`.
+- Skill descriptions lead with the trigger ("Use when ...") and skills carry text-only frontmatter (no `metadata` block); the plugin version lives in `plugin.json` and the marketplace entry.
+- The house rule about bundled scripts now says the plugin ships none.
+
+**Moved**
+- `acf_validate.py`, `aw_to_bricks.py` and `build_framework.py` moved unchanged to `dev/` (maintainer tools, not shipped). Each has an equivalent recipe in its skill's `references/` (`acf-validate.md`, `aw-to-bricks.md`, `build-framework.md`) that Claude follows with Read, Grep and Write.
+- The generated `atomic-framework.css` and `report.txt` are now `atomic-framework.css.md` and `report.txt.md` (the content in a fenced block, unchanged).
+
+**Added**
+- Public-safety files: `.public-safety-allow`, `PUBLIC-SAFETY.md`, a `.gitignore` preset, `.env.example`, and a CI workflow running the directory validator, router check and secret scan.
+- The release workflow now checks that the package holds only text files and no hooks or scripts.
 
 ## 0.1.8: Update
 
@@ -38,7 +50,7 @@
 
 ## 0.1.3 (2026-11-02)
 
-- Plugin icon (`assets/icon.png`, `assets/icon.svg`).
+- Plugin icon.
 
 ## 0.1.2 (2026-11-02)
 

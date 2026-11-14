@@ -1,0 +1,7 @@
+# False positives for scan_secrets.py when the plugin folder is scanned on its own. Not packaged.
+# The plugin's public support address in its author entry (the published contact, not personal data):
+email:.claude-plugin/plugin.json:support@syncwin.com
+email:README.md:support@syncwin.com
+email:.public-safety-allow:support@syncwin.com
+# A manifest field named "token" holding a CSS custom property name such as --space-2xl (no credential):
+*:*variables-manifest.json:"token": "--

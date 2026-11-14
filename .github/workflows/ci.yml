@@ -1,0 +1,46 @@
+name: CI
+
+# Checks on every push and pull request. main is the only branch: adapters/claude is the text-only plugin
+# that the Anthropic plugin directory tracks, and dev/ holds maintainer-only scripts that never ship.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  # Checker scripts (validator, secret scan, router check) live in the public aiaddon repo; pinned to a full commit SHA.
+  TOOLS_REF: 4364a0e0d80f08ae4b503c1a84818725e285122c
+
+jobs:
+  checks:
+    name: Checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0  # full history for the secret scan
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: syncwin/aiaddon
+          ref: ${{ env.TOOLS_REF }}
+          path: .checker-tools
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+      - name: Validate the plugin for the directory (blocking)
+        run: python .checker-tools/dev/aiaddon-review/scripts/validate_extension.py adapters/claude --strict --target directory --require-meta author,company
+      - name: Check the router against its evals
+        run: python .checker-tools/dev/aiaddon-review/scripts/route_check.py adapters/claude
+      - name: Scan the tree and the full git history for secrets and private data (blocking)
+        run: python .checker-tools/dev/aiaddon-review/scripts/scan_secrets.py . --history

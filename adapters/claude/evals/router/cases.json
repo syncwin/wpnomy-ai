@@ -1,0 +1,81 @@
+{
+  "_note": "Router cases: expected = the skill the routing table in skills/wpnomy/SKILL.md must pick, or 'ask' for the closed question. Checked by route_check.py.",
+  "cases": [
+    {
+      "prompt": "add an Event post type with date and venue using Meta Box and show it on the single event template in Bricks",
+      "expected": "wpnomy-bricks"
+    },
+    {
+      "prompt": "plan a Meta Box field group for a listings post type with a custom table",
+      "expected": "wpnomy-metabox"
+    },
+    {
+      "prompt": "should this site use Meta Box or ACF for its custom fields",
+      "expected": "wpnomy-metabox"
+    },
+    {
+      "prompt": "design an ACF schema for a projects post type with a repeater of floorplans",
+      "expected": "wpnomy-acf"
+    },
+    {
+      "prompt": "the ACF field on my community template shows blank on some pages",
+      "expected": "wpnomy-acf"
+    },
+    {
+      "prompt": "build the city hub hero as a Bricks section",
+      "expected": "wpnomy-bricks"
+    },
+    {
+      "prompt": "map our atomic wireframe tokens into Bricks on staging",
+      "expected": "wpnomy-bricks"
+    },
+    {
+      "prompt": "make a single template in Oxygen 6 with a query loop",
+      "expected": "wpnomy-oxygen"
+    },
+    {
+      "prompt": "Oxygen breakpoints do not match our Atomic Framework scale",
+      "expected": "wpnomy-oxygen"
+    },
+    {
+      "prompt": "create a Builderius component for the pricing card",
+      "expected": "wpnomy-builderius"
+    },
+    {
+      "prompt": "publish my Builderius template safely",
+      "expected": "wpnomy-builderius"
+    },
+    {
+      "prompt": "add a comparison table to this existing Elementor 3 page",
+      "expected": "wpnomy-elementor-classic"
+    },
+    {
+      "prompt": "fix the classic widgets on our old Elementor page",
+      "expected": "wpnomy-elementor-classic"
+    },
+    {
+      "prompt": "install the new Atomic Framework export on our Elementor V4 site",
+      "expected": "wpnomy-elementor-atomic"
+    },
+    {
+      "prompt": "build the hero with atomic elements and global classes",
+      "expected": "wpnomy-elementor-atomic"
+    },
+    {
+      "prompt": "write me a blog post about first-time buyer incentives",
+      "expected": "ask"
+    },
+    {
+      "prompt": "can you build me a landing page",
+      "expected": "ask"
+    },
+    {
+      "prompt": "the site is loading slowly, run a speed audit",
+      "expected": "ask"
+    },
+    {
+      "prompt": "redo the footer in Elementor",
+      "expected": "ask"
+    }
+  ]
+}
