@@ -1,0 +1,458 @@
+{
+  "variables": [
+    {
+      "name": "primary",
+      "value": "oklch(25% 0 0)",
+      "id": "afwclrpri",
+      "category": "afwclr"
+    },
+    {
+      "name": "secondary",
+      "value": "oklch(45% 0 0)",
+      "id": "afwclrsec",
+      "category": "afwclr"
+    },
+    {
+      "name": "accent",
+      "value": "oklch(60% 0 0)",
+      "id": "afwclracc",
+      "category": "afwclr"
+    },
+    {
+      "name": "text-color",
+      "value": "oklch(32% 0.006 264)",
+      "id": "afwclrtxt",
+      "category": "afwclr"
+    },
+    {
+      "name": "heading-color",
+      "value": "oklch(15% 0.005 264)",
+      "id": "afwclrhdg",
+      "category": "afwclr"
+    },
+    {
+      "name": "bg-body",
+      "value": "oklch(100% 0 0)",
+      "id": "afwclrbdy",
+      "category": "afwclr"
+    },
+    {
+      "name": "bg-surface",
+      "value": "oklch(97% 0.003 264)",
+      "id": "afwclrsrf",
+      "category": "afwclr"
+    },
+    {
+      "name": "border-color",
+      "value": "oklch(87% 0.005 264)",
+      "id": "afwclrbrd",
+      "category": "afwclr"
+    },
+    {
+      "name": "on-accent",
+      "value": "var(--bg-body)",
+      "id": "afwclronac",
+      "category": "afwclr"
+    },
+    {
+      "name": "muted-foreground",
+      "value": "color-mix(in srgb, var(--text-color) 60%, var(--bg-body) 40%)",
+      "id": "afwclrmfg",
+      "category": "afwclr"
+    },
+    {
+      "name": "surface-muted",
+      "value": "color-mix(in srgb, var(--border-color) 50%, var(--bg-surface) 50%)",
+      "id": "afwclrsfm",
+      "category": "afwclr"
+    },
+    {
+      "name": "primary-hover",
+      "value": "color-mix(in srgb, var(--primary) 85%, black)",
+      "id": "afwclrprh",
+      "category": "afwclr"
+    },
+    {
+      "name": "secondary-hover",
+      "value": "color-mix(in srgb, var(--secondary) 85%, black)",
+      "id": "afwclrsch",
+      "category": "afwclr"
+    },
+    {
+      "name": "accent-hover",
+      "value": "color-mix(in srgb, var(--accent) 85%, black)",
+      "id": "afwclrach",
+      "category": "afwclr"
+    },
+    {
+      "name": "font-body",
+      "value": "system-ui, -apple-system, sans-serif",
+      "id": "afwtypfnb",
+      "category": "afwtyp"
+    },
+    {
+      "name": "font-heading",
+      "value": "inherit",
+      "id": "afwtypfnh",
+      "category": "afwtyp"
+    },
+    {
+      "name": "font-mono",
+      "value": "ui-monospace, 'Cascadia Code', 'Fira Code', monospace",
+      "id": "afwtypfnm",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-xs",
+      "value": "clamp(1.1rem, calc(0.0926vw + 1.0667rem), 1.2rem)",
+      "id": "afwtypxs",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-s",
+      "value": "clamp(1.3rem, calc(0.1852vw + 1.2333rem), 1.5rem)",
+      "id": "afwtyps",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-m",
+      "value": "clamp(1.6rem, calc(0.1852vw + 1.5333rem), 1.8rem)",
+      "id": "afwtypm",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-l",
+      "value": "clamp(1.8rem, calc(0.5556vw + 1.6000rem), 2.4rem)",
+      "id": "afwtypl",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-xl",
+      "value": "clamp(2.025rem, calc(1.0880vw + 1.6333rem), 3.2rem)",
+      "id": "afwtypxl",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-2xl",
+      "value": "clamp(2.278rem, calc(1.8398vw + 1.6157rem), 4.265rem)",
+      "id": "afwtyp2x",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-3xl",
+      "value": "clamp(2.563rem, calc(2.8926vw + 1.5217rem), 5.687rem)",
+      "id": "afwtyp3x",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-4xl",
+      "value": "clamp(2.883rem, calc(4.3509vw + 1.3167rem), 7.582rem)",
+      "id": "afwtyp4x",
+      "category": "afwtyp"
+    },
+    {
+      "name": "h1",
+      "value": "clamp(3.6rem, calc(1.6667vw + 3.0000rem), 5.4rem)",
+      "id": "afwtyph1",
+      "category": "afwtyp"
+    },
+    {
+      "name": "h2",
+      "value": "clamp(2.8rem, calc(1.2963vw + 2.3333rem), 4.2rem)",
+      "id": "afwtyph2",
+      "category": "afwtyp"
+    },
+    {
+      "name": "h3",
+      "value": "clamp(2.2rem, calc(0.9259vw + 1.8667rem), 3.2rem)",
+      "id": "afwtyph3",
+      "category": "afwtyp"
+    },
+    {
+      "name": "h4",
+      "value": "clamp(1.8rem, calc(0.5556vw + 1.6000rem), 2.4rem)",
+      "id": "afwtyph4",
+      "category": "afwtyp"
+    },
+    {
+      "name": "h5",
+      "value": "clamp(1.6rem, calc(0.3704vw + 1.4667rem), 2.0rem)",
+      "id": "afwtyph5",
+      "category": "afwtyp"
+    },
+    {
+      "name": "h6",
+      "value": "clamp(1.4rem, calc(0.1852vw + 1.3333rem), 1.6rem)",
+      "id": "afwtyph6",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-line-height",
+      "value": "calc(8px + 2ex)",
+      "id": "afwtyptlh",
+      "category": "afwtyp"
+    },
+    {
+      "name": "heading-line-height",
+      "value": "calc(4px + 2ex)",
+      "id": "afwtyphlh",
+      "category": "afwtyp"
+    },
+    {
+      "name": "text-font-weight",
+      "value": "400",
+      "id": "afwtyptfw",
+      "category": "afwtyp"
+    },
+    {
+      "name": "heading-font-weight",
+      "value": "600",
+      "id": "afwtyphfw",
+      "category": "afwtyp"
+    },
+    {
+      "name": "space-xs",
+      "value": "clamp(1.024rem, calc(0.3481vw + 0.9000rem), 1.4rem)",
+      "id": "afwspxs",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-s",
+      "value": "clamp(1.28rem, calc(0.6481vw + 1.0467rem), 1.98rem)",
+      "id": "afwsps",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-m",
+      "value": "clamp(1.6rem, calc(1.1111vw + 1.2000rem), 2.8rem)",
+      "id": "afwspm",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-l",
+      "value": "clamp(2.0rem, calc(1.8148vw + 1.3467rem), 3.96rem)",
+      "id": "afwspl",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-xl",
+      "value": "clamp(2.5rem, calc(2.8704vw + 1.4667rem), 5.6rem)",
+      "id": "afwspxl",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-2xl",
+      "value": "clamp(3.125rem, calc(4.4361vw + 1.5280rem), 7.916rem)",
+      "id": "afwsp2x",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-3xl",
+      "value": "clamp(3.906rem, calc(6.7537vw + 1.4747rem), 11.2rem)",
+      "id": "afwsp3x",
+      "category": "afwsp"
+    },
+    {
+      "name": "space-4xl",
+      "value": "clamp(4.883rem, calc(10.1454vw + 1.2307rem), 15.84rem)",
+      "id": "afwsp4x",
+      "category": "afwsp"
+    },
+    {
+      "name": "min-screen-width",
+      "value": "360px",
+      "id": "afwlytmnvw",
+      "category": "afwlyt"
+    },
+    {
+      "name": "max-screen-width",
+      "value": "1440px",
+      "id": "afwlytmxvw",
+      "category": "afwlyt"
+    },
+    {
+      "name": "container-width",
+      "value": "1280px",
+      "id": "afwlytctn",
+      "category": "afwlyt"
+    },
+    {
+      "name": "max-width",
+      "value": "960px",
+      "id": "afwlytmw",
+      "category": "afwlyt"
+    },
+    {
+      "name": "max-width-m",
+      "value": "720px",
+      "id": "afwlytmwm",
+      "category": "afwlyt"
+    },
+    {
+      "name": "max-width-s",
+      "value": "560px",
+      "id": "afwlytmws",
+      "category": "afwlyt"
+    },
+    {
+      "name": "radius-none",
+      "value": "0",
+      "id": "afwfxradn",
+      "category": "afwfx"
+    },
+    {
+      "name": "radius-xs",
+      "value": "clamp(0.3rem, calc(0.0926vw + 0.2667rem), 0.4rem)",
+      "id": "afwfxradxs",
+      "category": "afwfx"
+    },
+    {
+      "name": "radius-s",
+      "value": "clamp(0.6rem, calc(0.1852vw + 0.5333rem), 0.8rem)",
+      "id": "afwfxrads",
+      "category": "afwfx"
+    },
+    {
+      "name": "radius-m",
+      "value": "clamp(0.8rem, calc(0.3704vw + 0.6667rem), 1.2rem)",
+      "id": "afwfxradm",
+      "category": "afwfx"
+    },
+    {
+      "name": "radius-l",
+      "value": "clamp(1.2rem, calc(0.3704vw + 1.0667rem), 1.6rem)",
+      "id": "afwfxradl",
+      "category": "afwfx"
+    },
+    {
+      "name": "radius-xl",
+      "value": "clamp(1.6rem, calc(0.3704vw + 1.4667rem), 2.0rem)",
+      "id": "afwfxradxl",
+      "category": "afwfx"
+    },
+    {
+      "name": "radius-full",
+      "value": "9999px",
+      "id": "afwfxradf",
+      "category": "afwfx"
+    },
+    {
+      "name": "shadow-color",
+      "value": "var(--heading-color)",
+      "id": "afwfxshc",
+      "category": "afwfx"
+    },
+    {
+      "name": "shadow-xs",
+      "value": "0 1px 2px color-mix(in srgb, var(--shadow-color) 8%, transparent)",
+      "id": "afwfxshxs",
+      "category": "afwfx"
+    },
+    {
+      "name": "shadow-s",
+      "value": "0 2px 4px color-mix(in srgb, var(--shadow-color) 10%, transparent)",
+      "id": "afwfxshs",
+      "category": "afwfx"
+    },
+    {
+      "name": "shadow-m",
+      "value": "0 4px 8px color-mix(in srgb, var(--shadow-color) 12%, transparent)",
+      "id": "afwfxshm",
+      "category": "afwfx"
+    },
+    {
+      "name": "shadow-l",
+      "value": "0 8px 16px color-mix(in srgb, var(--shadow-color) 15%, transparent)",
+      "id": "afwfxshl",
+      "category": "afwfx"
+    },
+    {
+      "name": "shadow-xl",
+      "value": "0 16px 32px color-mix(in srgb, var(--shadow-color) 18%, transparent)",
+      "id": "afwfxshxl",
+      "category": "afwfx"
+    },
+    {
+      "name": "transition",
+      "value": "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+      "id": "afwfxtrn",
+      "category": "afwfx"
+    },
+    {
+      "name": "transition-fast",
+      "value": "all 0.1s cubic-bezier(0.4, 0, 0.2, 1)",
+      "id": "afwfxtrf",
+      "category": "afwfx"
+    },
+    {
+      "name": "z-dropdown",
+      "value": "100",
+      "id": "afwfxzdd",
+      "category": "afwfx"
+    },
+    {
+      "name": "z-sticky",
+      "value": "200",
+      "id": "afwfxzst",
+      "category": "afwfx"
+    },
+    {
+      "name": "z-overlay",
+      "value": "300",
+      "id": "afwfxzov",
+      "category": "afwfx"
+    },
+    {
+      "name": "z-modal",
+      "value": "400",
+      "id": "afwfxzmd",
+      "category": "afwfx"
+    },
+    {
+      "name": "z-tooltip",
+      "value": "700",
+      "id": "afwfxztt",
+      "category": "afwfx"
+    },
+    {
+      "name": "focus-ring-color",
+      "value": "var(--primary)",
+      "id": "afwfxfrc",
+      "category": "afwfx"
+    },
+    {
+      "name": "focus-ring-width",
+      "value": "0.2rem",
+      "id": "afwfxfrw",
+      "category": "afwfx"
+    },
+    {
+      "name": "focus-ring-offset",
+      "value": "0.2rem",
+      "id": "afwfxfro",
+      "category": "afwfx"
+    }
+  ],
+  "categories": [
+    {
+      "id": "afwclr",
+      "name": "Colors"
+    },
+    {
+      "id": "afwtyp",
+      "name": "Typography"
+    },
+    {
+      "id": "afwsp",
+      "name": "Spacing"
+    },
+    {
+      "id": "afwlyt",
+      "name": "Layout"
+    },
+    {
+      "id": "afwfx",
+      "name": "Effects"
+    }
+  ]
+}

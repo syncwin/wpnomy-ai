@@ -1,0 +1,527 @@
+{
+ "source": "Atomic Wireframe 0.19.1-dev default project, Atomic Framework 2.2.0",
+ "categories": [
+  {
+   "id": "afwclr",
+   "name": "Colors"
+  },
+  {
+   "id": "afwtyp",
+   "name": "Typography"
+  },
+  {
+   "id": "afwsp",
+   "name": "Spacing"
+  },
+  {
+   "id": "afwlyt",
+   "name": "Layout"
+  },
+  {
+   "id": "afwfx",
+   "name": "Effects"
+  }
+ ],
+ "tokens": {
+  "primary": {
+   "id": "afwclrpri",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "secondary": {
+   "id": "afwclrsec",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "accent": {
+   "id": "afwclracc",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "text-color": {
+   "id": "afwclrtxt",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "heading-color": {
+   "id": "afwclrhdg",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "bg-body": {
+   "id": "afwclrbdy",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "bg-surface": {
+   "id": "afwclrsrf",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "border-color": {
+   "id": "afwclrbrd",
+   "category": "afwclr",
+   "layer": "atom",
+   "type": "color"
+  },
+  "on-accent": {
+   "id": "afwclronac",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "muted-foreground": {
+   "id": "afwclrmfg",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "surface-muted": {
+   "id": "afwclrsfm",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "primary-hover": {
+   "id": "afwclrprh",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "secondary-hover": {
+   "id": "afwclrsch",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "accent-hover": {
+   "id": "afwclrach",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "font-body": {
+   "id": "afwtypfnb",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "font"
+  },
+  "font-heading": {
+   "id": "afwtypfnh",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "font"
+  },
+  "font-mono": {
+   "id": "afwtypfnm",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "font"
+  },
+  "text-xs": {
+   "id": "afwtypxs",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-s": {
+   "id": "afwtyps",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-m": {
+   "id": "afwtypm",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-l": {
+   "id": "afwtypl",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-xl": {
+   "id": "afwtypxl",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-2xl": {
+   "id": "afwtyp2x",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-3xl": {
+   "id": "afwtyp3x",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "text-4xl": {
+   "id": "afwtyp4x",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "h1": {
+   "id": "afwtyph1",
+   "category": "afwtyp",
+   "layer": "molecule",
+   "type": "size"
+  },
+  "h2": {
+   "id": "afwtyph2",
+   "category": "afwtyp",
+   "layer": "molecule",
+   "type": "size"
+  },
+  "h3": {
+   "id": "afwtyph3",
+   "category": "afwtyp",
+   "layer": "molecule",
+   "type": "size"
+  },
+  "h4": {
+   "id": "afwtyph4",
+   "category": "afwtyp",
+   "layer": "molecule",
+   "type": "size"
+  },
+  "h5": {
+   "id": "afwtyph5",
+   "category": "afwtyp",
+   "layer": "molecule",
+   "type": "size"
+  },
+  "h6": {
+   "id": "afwtyph6",
+   "category": "afwtyp",
+   "layer": "molecule",
+   "type": "size"
+  },
+  "text-line-height": {
+   "id": "afwtyptlh",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "string"
+  },
+  "heading-line-height": {
+   "id": "afwtyphlh",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "string"
+  },
+  "text-font-weight": {
+   "id": "afwtyptfw",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "number"
+  },
+  "heading-font-weight": {
+   "id": "afwtyphfw",
+   "category": "afwtyp",
+   "layer": "atom",
+   "type": "number"
+  },
+  "space-xs": {
+   "id": "afwspxs",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-s": {
+   "id": "afwsps",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-m": {
+   "id": "afwspm",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-l": {
+   "id": "afwspl",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-xl": {
+   "id": "afwspxl",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-2xl": {
+   "id": "afwsp2x",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-3xl": {
+   "id": "afwsp3x",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "space-4xl": {
+   "id": "afwsp4x",
+   "category": "afwsp",
+   "layer": "atom",
+   "type": "size"
+  },
+  "min-screen-width": {
+   "id": "afwlytmnvw",
+   "category": "afwlyt",
+   "layer": "atom",
+   "type": "size"
+  },
+  "max-screen-width": {
+   "id": "afwlytmxvw",
+   "category": "afwlyt",
+   "layer": "atom",
+   "type": "size"
+  },
+  "container-width": {
+   "id": "afwlytctn",
+   "category": "afwlyt",
+   "layer": "atom",
+   "type": "size"
+  },
+  "max-width": {
+   "id": "afwlytmw",
+   "category": "afwlyt",
+   "layer": "atom",
+   "type": "size"
+  },
+  "max-width-m": {
+   "id": "afwlytmwm",
+   "category": "afwlyt",
+   "layer": "atom",
+   "type": "size"
+  },
+  "max-width-s": {
+   "id": "afwlytmws",
+   "category": "afwlyt",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-none": {
+   "id": "afwfxradn",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-xs": {
+   "id": "afwfxradxs",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-s": {
+   "id": "afwfxrads",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-m": {
+   "id": "afwfxradm",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-l": {
+   "id": "afwfxradl",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-xl": {
+   "id": "afwfxradxl",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "radius-full": {
+   "id": "afwfxradf",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "shadow-color": {
+   "id": "afwfxshc",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "color"
+  },
+  "shadow-xs": {
+   "id": "afwfxshxs",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "shadow"
+  },
+  "shadow-s": {
+   "id": "afwfxshs",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "shadow"
+  },
+  "shadow-m": {
+   "id": "afwfxshm",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "shadow"
+  },
+  "shadow-l": {
+   "id": "afwfxshl",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "shadow"
+  },
+  "shadow-xl": {
+   "id": "afwfxshxl",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "shadow"
+  },
+  "transition": {
+   "id": "afwfxtrn",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "transition"
+  },
+  "transition-fast": {
+   "id": "afwfxtrf",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "transition"
+  },
+  "z-dropdown": {
+   "id": "afwfxzdd",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "number"
+  },
+  "z-sticky": {
+   "id": "afwfxzst",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "number"
+  },
+  "z-overlay": {
+   "id": "afwfxzov",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "number"
+  },
+  "z-modal": {
+   "id": "afwfxzmd",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "number"
+  },
+  "z-tooltip": {
+   "id": "afwfxztt",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "number"
+  },
+  "focus-ring-color": {
+   "id": "afwfxfrc",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "focus-ring-width": {
+   "id": "afwfxfrw",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "focus-ring-offset": {
+   "id": "afwfxfro",
+   "category": "afwfx",
+   "layer": "atom",
+   "type": "size"
+  },
+  "on-primary": {
+   "id": "afwclronpr",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "on-secondary": {
+   "id": "afwclronse",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "focus-ring-contrast": {
+   "id": "afwfxfrx",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "focus-ring-style": {
+   "id": "afwfxfrs",
+   "category": "afwfx",
+   "layer": "molecule",
+   "type": "keyword"
+  },
+  "scrim-strong": {
+   "id": "afwclrscrs",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "scrim-mid": {
+   "id": "afwclrscrm",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "scrim-soft": {
+   "id": "afwclrscro",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  },
+  "on-scrim": {
+   "id": "afwclronscm",
+   "category": "afwclr",
+   "layer": "molecule",
+   "type": "color"
+  }
+ },
+ "defaultBaseSettings": {
+  "afwtyp": {
+   "naming": "text",
+   "minFont": 15,
+   "maxFont": 16,
+   "minRatio": 1.125,
+   "maxRatio": 1.2,
+   "baseIndex": 2,
+   "headingMin": 16,
+   "headingMax": 17
+  },
+  "afwsp": {
+   "naming": "space",
+   "minSize": 16,
+   "maxSize": 28,
+   "minRatio": 1.125,
+   "maxRatio": 1.25,
+   "baseIndex": 2
+  }
+ }
+}

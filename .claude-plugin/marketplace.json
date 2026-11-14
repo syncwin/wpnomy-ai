@@ -11,10 +11,11 @@
     {
       "name": "wpnomy",
       "displayName": "WPnomy",
+      "source": "./adapters/claude",
       "description": "Build WordPress sites the right way from the start: one expert skill per plugin (Bricks, Elementor V4 and V3, Oxygen 6, Builderius, ACF, Meta Box) under one black box policy, with Atomic Framework variables, BEM classes, native elements and front-end checks.",
-      "source": "./",
+      "category": "development",
       "homepage": "https://wpnomy.com/",
-      "category": "development"
+      "version": "0.2.0"
     }
   ]
 }
