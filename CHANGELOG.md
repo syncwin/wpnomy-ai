@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1: Release fix
+
+**Fixed**
+- The icon image moved out of the shipped plugin to `docs/assets/` (the manifest no longer references it), so the release package is text only and the release build passes.
+
 ## 0.2.0: Directory-compliant layout
 
 **Changed**
