@@ -15,7 +15,7 @@
       "description": "Build WordPress sites the right way from the start: one expert skill per plugin (Bricks, Elementor V4 and V3, Oxygen 6, Builderius, ACF, Meta Box) under one black box policy, with Atomic Framework variables, BEM classes, native elements and front-end checks.",
       "category": "development",
       "homepage": "https://wpnomy.com/",
-      "version": "0.2.0"
+      "version": "0.2.1"
     }
   ]
 }
