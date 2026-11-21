@@ -65,6 +65,8 @@ Global components support nesting, conditional display and custom properties. Bu
 
 ## 8. Check
 
+Shortcodes: check on the front end after saving that they run (unverified for Builderius).
+
 1. Read the settings back and confirm the new commit holds your change.
 2. After the owner publishes, load the front end at the base and at every breakpoint.
 3. Run the router's hand-over checklist (house rules §7).

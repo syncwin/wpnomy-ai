@@ -106,7 +106,7 @@ Element states and responsive values are set per breakpoint and per state in the
 
 ## Known issues
 
-An `e-image` swap needs the attachment id, Elementor CSS may need clearing after writes, and a failed rich save has a `save_plain_text` fallback. Details, marked verify on the site: `references/known-issues.md`.
+An `e-image` swap needs the attachment id, Elementor CSS may need clearing after writes, and a failed rich save has a `save_plain_text` fallback. Atomic widgets do not run shortcodes (use a dynamic tag), and a link replace must cover both stored link forms. Details, marked verify on the site: `references/known-issues.md`.
 
 ## Version boundary
 

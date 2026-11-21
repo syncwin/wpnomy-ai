@@ -69,6 +69,8 @@ add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {
 - `rwmb_get_value()` returns the stored value (a select's key); `rwmb_the_value()` returns display HTML (a select's label). `rwmb_meta()` acts like `rwmb_the_value()` for oEmbed and map fields and like `rwmb_get_value()` otherwise.
 - Escape on output (`esc_html`, `esc_url`, `wp_kses_post`).
 
+Meta Box textarea and WYSIWYG fields run shortcodes by default. After `meta-box/create-field`, clear the compiled `meta_box_*` transient so the new field shows. Bricks reads a Meta Box checkbox as "Yes", not 1; test conditions against "Yes".
+
 ## 6. Custom tables (MB Custom Table)
 
 Use custom tables for many records or for fields queried often.

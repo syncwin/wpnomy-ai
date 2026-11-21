@@ -74,3 +74,8 @@ Use the router's "Before handing back" list. Report each line PASS, FAIL or NOT 
 - **Claude in Chrome profiles.** It only sees its own tab group in the connected profile. To use a signed-in profile, launch Chrome with `--profile-directory="Profile N"` (map the account to a profile through `Local State`, `profile.info_cache`), then `select_browser`.
 - **`alert()` dialogs.** A JavaScript `alert()` blocks the Chrome extension and screenshots time out. Ask the owner to click OK, or avoid flows that alert.
 - **File uploads.** Use Novamira `create-upload-link`, then `curl -X PUT --data-binary @file`. No base64 in chat and no wp-admin login. To replace media in place, back up the originals, then `copy()` and `wp_generate_attachment_metadata()`.
+- **Learn the stack, tune the tools.** Before any build, read the site's theme, builder, frameworks, snippets and active plugins, and set the site-management tool's settings to match.
+- **Breakpoint strategy.** Read it from the site (base breakpoint, desktop-first or mobile-first); never assume mobile-first.
+- **Finish a page build with a browser vision review.** Compare the rendered page with the design source section by section at desktop and phone widths, plus section heights. A save or render readback is not enough.
+- **Figures come from the data source.** Any figure the site's data shortcode or dynamic tag prints goes through it, never typed by hand. If a widget cannot run it, mark the figure hand-written in the scratchpad.
+- **Loopback checks.** `wp_remote_get( home_url() )` with a custom User-Agent can return an empty body; use the default User-Agent.

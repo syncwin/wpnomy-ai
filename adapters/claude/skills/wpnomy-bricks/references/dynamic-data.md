@@ -92,3 +92,7 @@ Conditions are render logic only: never styling and never responsive visibility 
 ## Test records
 
 Every template is checked logged out against one complete record and one sparse record before it is used. Most template defects are missing-value defects, and the complete record hides all of them.
+
+## Shortcodes in Heading and Basic Text
+
+The Heading and Basic Text elements do not run shortcodes on the front end. Use dynamic data tags, or a Rich Text element when the shortcode sits inside a sentence. Check the front end after saving.

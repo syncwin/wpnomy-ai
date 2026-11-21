@@ -12,6 +12,8 @@ Checked on Bricks 2.4.5. Re-test on other versions before relying on a workaroun
 - **`bricks/upload-custom-icon`** rejects SVG files that are valid. Workaround: upload the file as normal media and use an `image` element, or add the icon in the builder UI. Tell the owner which icons were swapped.
 - **`bricks/create-template`** rejects the svg signature, `user_id` and `time` keys. Strip them, create, then re-sign (see `templates-and-components.md`).
 
+- Quoted `font-family: inherit` and the import limits are in `elements-and-pages.md`.
+
 ## Running PHP as user 0
 
 `execute-php` runs as user 0, which has no capabilities, so abilities gated by Bricks code fail with a permission error.

@@ -21,3 +21,12 @@ Written from field feedback with little detail. Treat each item as a lead and ve
 
 - If a save with rich or formatted text is rejected or comes back altered, fall back to `save_plain_text` for that field, then add the formatting with the element's own controls or classes. Verify on the site that the tool exists under that name, since the live tool list leads.
 - Log each fallback in the scratchpad with the field it applied to.
+
+## Shortcodes and figures
+
+- Atomic widgets do not run shortcodes. Use a dynamic tag for a data figure, or mark the figure hand-written in the scratchpad.
+
+## Replacing links
+
+- V4 data can store a link in two forms: a `value` field and an escaped `href=\"` inside text. A link replace must cover both; re-read the page and count both forms afterwards.
+- Never clear the Elementor CSS cache while an external SEO crawl is running; the crawl sees unstyled or broken pages.

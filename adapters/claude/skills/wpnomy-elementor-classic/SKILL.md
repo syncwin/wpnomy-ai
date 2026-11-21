@@ -38,6 +38,8 @@ Exception: a data table or similar block that genuinely needs markup lives in an
 
 The Atomic Framework does not apply here. It depends on V4 Variables and Classes, and a V3 page cannot read them. Do not import its CSS onto a V3 page to get around the doctrine above.
 
+Shared non-Elementor UI and functions go in one global place (FluentSnippets for functions, Elementor Code Snippets where relevant), not on single pages.
+
 ## Structure
 
 - Flexbox containers for every layout. Grid containers where the layout is genuinely a grid. Never legacy sections and columns.
