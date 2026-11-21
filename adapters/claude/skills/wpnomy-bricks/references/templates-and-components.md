@@ -91,6 +91,13 @@ Policy first: a modal is a native `dialog` or the Popover API (see `elements-and
 - Settings through `bricks/update-popup-settings`: `popupCloseOn` (one of `backdrop`, `esc`, `none`), `popupBodyScroll`, `popupAjax`, the `popupLimit*` frequency keys, template interactions `showPopup` and `hidePopup`. Default z-index 10000 (`popupZindex`). Read with `bricks/list-popups` and `bricks/get-popup-config`.
 - A form in a popup needs a success state or close behaviour.
 
+### Popup scope, triggers and re-signing
+
+- Popups render outside the page wrapper, so page-level tokens and scoped classes do not reach them. Put a scope class that carries the page tokens on the popup root.
+- A `#` link swallows the click. Make every dialog or popup trigger a `button`, not a link.
+- **Shared archive templates.** Before removing a section from a template that several archives share, list every term the template's conditions cover. Prefer a native element condition (for example `{query_results_count:<loopId>} == 0`) over deleting the section, so leaf terms keep their grid.
+- **`bricks/create-template` re-sign flow.** It rejects the svg signature, `user_id` and `time` keys. Strip them from the payload, create the template, then re-sign the elements (see `known-issues.md` for the signing call).
+
 ## Interactions
 
 Only where CSS and native HTML have no route: a popup opener, an off-canvas toggle, load more. Each one ships inline `data-interactions` JSON.

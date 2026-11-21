@@ -18,6 +18,7 @@ Claude skills for building WordPress sites the right way from the start. One exp
 | `wpnomy-builderius` | Builderius templates, components, global settings commits, breakpoints |
 | `wpnomy-acf` | ACF schemas, importable JSON, binding ACF values into pages |
 | `wpnomy-metabox` | Meta Box field groups, post types, custom tables, official abilities, bindings |
+| `wpnomy-thinkrank` | ThinkRank SEO plugin: setup, moving off Yoast, schema and JSON-LD, sitemap, llms.txt |
 
 ## Commands
 
@@ -33,6 +34,7 @@ Start with the router and describe the job; it sends the work to the right exper
 | `/wpnomy:wpnomy-builderius` | Builderius |
 | `/wpnomy:wpnomy-acf` | ACF |
 | `/wpnomy:wpnomy-metabox` | Meta Box |
+| `/wpnomy:wpnomy-thinkrank` | ThinkRank SEO |
 
 Example: `/wpnomy:wpnomy add an Event post type with date and venue using Meta Box and show it on the single event template in Bricks`
 

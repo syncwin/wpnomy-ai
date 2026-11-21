@@ -24,7 +24,7 @@ The **Atomic Wireframe** plugin holds the site's design: the 80-token Atomic Fra
 - Never let Bricks regenerate a scale the framework owns. Details in `references/design-system.md`.
 - If the plugin is absent, ask for a framework export before inventing any token.
 
-Build mobile-first. Style settings need breakpoint keys (base, then `:bp360` and so on); unsuffixed keys save but render nothing.
+Read the site's breakpoint strategy (`bricks/list-breakpoints`, base breakpoint) instead of assuming mobile-first. On mobile-first sites, batch-created global classes, element styles and popup settings need the base breakpoint key (such as `:bp360`) at the create step; unsuffixed keys save but render nothing.
 
 ## Black box gate
 
@@ -113,6 +113,7 @@ A clipboard file carries its `globalClasses` with names matching the target site
 | ACF values, query loops, global queries, query filters, element conditions, hide on empty | `references/dynamic-data.md` |
 | Any form (contact, home evaluation, lead capture) | `references/forms.md` |
 | First run on a site, verifying any write, handing back | `references/verify.md` |
+| A Bricks 2.4.5 ability fails, or `execute-php` is needed | `references/known-issues.md` |
 
 ## Before handing back
 
@@ -126,5 +127,6 @@ A clipboard file carries its `globalClasses` with names matching the target site
 - [ ] Every dynamic tag previewed with `bricks/preview-dynamic-tag` and `unknownTags` empty.
 - [ ] Every bound block hides on an empty value, tested on a complete and a sparse record.
 - [ ] Checked logged out on the front end at every Bricks breakpoint. CSS regenerated if CSS loading is set to files.
+- [ ] Vision review done at desktop and phone widths, with section heights compared (`references/verify.md`).
 - [ ] Transfer package exported before any global change on a site with content.
 - [ ] Scratchpad complete, including every condition in plain language.

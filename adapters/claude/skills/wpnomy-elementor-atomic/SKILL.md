@@ -104,6 +104,10 @@ Flexbox where the layout is a flex context, Div Block where it is a plain wrappe
 
 Element states and responsive values are set per breakpoint and per state in the style tabs. Respect the site's own breakpoints and never introduce a new one.
 
+## Known issues
+
+An `e-image` swap needs the attachment id, Elementor CSS may need clearing after writes, and a failed rich save has a `save_plain_text` fallback. Details, marked verify on the site: `references/known-issues.md`.
+
 ## Version boundary
 
 A V4 page is a V4 page. Do not convert existing V3 production pages to V4 and do not partially migrate one. Mixed pages are acceptable only where the coverage gap forces it.

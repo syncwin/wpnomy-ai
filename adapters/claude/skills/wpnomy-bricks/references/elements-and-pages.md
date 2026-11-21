@@ -63,6 +63,29 @@ Class custom CSS is a full rule using the class selector (`.md-pill.is-active { 
 
 Later wins at equal specificity: global variables, theme styles, utility classes, global classes, palette colour vars, page CSS, header, content, footer, popup, template CSS, Settings custom code. Solve a conflict by moving the rule to the right layer, never `!important`. FluentSnippets CSS sits wherever its location setting puts it (usually the head, so before Bricks' own CSS): keep snippet rules flat and one class deep so they never depend on load order.
 
+## After an HTML and CSS import
+
+`bricks/commit-html-css-page-import` is a converter, not a finished build. Run this pass on every import, then verify on the front end.
+
+- `font-family: inherit` can be stored as a quoted font name. Reset it to the keyword.
+- Each `#brxe-<id>` CSS block must have its id printed on the element. Read the output and fix any block with no matching id.
+- Drop `_width` and `_height` copied from image attributes. Link each image to its media id (see Media below).
+- Text tags inside inline parents (a `p` inside a `span`, a heading inside a link) are rewritten by the converter. Check the tags and fix them.
+- Inline `svg` loses its class. Put the class back on the element.
+- Add one theme style rule that resets the default flex layout and the `figcaption` defaults the converter introduces.
+
+**Import limits and workarounds.**
+
+| Limit | Workaround |
+|---|---|
+| Responsive rules go into class CSS media queries, not native breakpoint keys | Move the values to native breakpoint keys on the class after the import |
+| `summary` and `select` become `div` | Set `tag: "custom"` with `customTag` back to `summary`, or use the native form element for a select |
+| Inline `svg` is rejected | Export each SVG to an image file, upload it, use an `image` element |
+| A top-level `main` is rejected | Unwrap it: import the children, keep `main` in the template |
+| Bare element selectors (`body`, `h2`, `a`) are dropped | Put them in a scoped reset snippet or in the theme style |
+
+**Converting CSS-only styling into native controls.** Deep-merge the new settings into the existing ones. Never replace a whole settings group (`_typography`, `_border`), or sibling values set earlier are lost.
+
 ## Write routes
 
 | Situation | Route |

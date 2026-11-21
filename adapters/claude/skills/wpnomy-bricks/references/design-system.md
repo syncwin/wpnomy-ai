@@ -69,6 +69,15 @@ Each step is a separate, verified write. Fresh ownership from one read before ea
 
 On a site with content, switching paradigm orphans every responsive value stored under the old keys (they stay on elements, never deleted). Never reuse an old key for a different width: its stored settings merge silently. On an empty site the switch is free.
 
+## Breakpoint strategy and the base key
+
+Do not assume mobile-first. Read the site first: `bricks/list-breakpoints` returns the base breakpoint and `isMobileFirst`. Follow what the site has.
+
+- On a mobile-first site the base breakpoint has its own key, for example `:bp360`. A setting saved without it renders nothing at the base width.
+- Say this at the create step: batch-created global classes, element styles and popup settings all need the base breakpoint key. A key such as `_padding:bp360` works; plain `_padding` does not. Build the keys before the batch is sent.
+- Read one existing global class back to copy the key form the site actually stores.
+- On a desktop-first site, the unsuffixed key is the base and narrower widths take their own suffixes.
+
 ## Fonts
 
 Self-hosted, at most two families. Call order:
