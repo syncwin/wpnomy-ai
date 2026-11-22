@@ -12,3 +12,6 @@ drive-path:AGENTS.md:A:\Automation
 drive-path:AGENTS.md:D:\SyncWin
 # A manifest field named "token" holding a CSS custom property name such as --space-2xl (current tree and history, no credential):
 *:*variables-manifest.json:"token": "--
+# 2026-11-22 owner-approved: old-history findings (public support address, WordPress.org team address, old local path), matched by hash
+email:*:sha256:d92a214b6160
+drive-path:*AGENTS.md:sha256:dc5b5845f996
