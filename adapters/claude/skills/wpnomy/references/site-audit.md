@@ -52,6 +52,39 @@ Each of these is a setting, not a rebuild, and each has a plausible reason someo
 | Page cache, object cache and the builder's own caches | Elementor keeps CSS and element caches separate from any page cache plugin. Forgetting one is the usual reason an update looks like it did not apply. |
 | Post revisions retained | Elementor stores a revision per save, and a long-lived page accumulates thousands of rows. |
 
+## Go-live purchase check (stores)
+
+Check a purchase without placing an order, through the Store API:
+
+1. `GET` the cart (send the `Nonce` and `Cart-Token` headers).
+2. `POST cart/add-item` with a real product.
+3. `POST cart/update-customer` with a real local address.
+4. Read the totals, `shipping_rates` and `payment_methods`.
+
+A missing carrier rate or payment method shows up here. Report it; fix nothing without a yes. Remove the test cart item afterwards.
+
+## WooCommerce go-live checks
+
+Read-only. Report each finding; change nothing without a yes.
+
+- **Weight and size.** Compare the store's weight unit with the product values (for example `0.6` in a `g` store is almost certainly wrong). List products with missing dimensions.
+- **Shipping zones.** List each zone and its methods. A zone with no method, or a customer address that matches no zone, gives no rate.
+- **In-request cart test.** In one PHP request, load the cart (`wc_load_cart()`), set the shipping location with `WC()->customer->set_shipping_location()` and call `calculate_shipping()`. Add an `http_response` filter to capture the carrier API reply. Cart loops in one request can reuse a stale tax location, so test each address in a new request.
+- **Local pickup plus a national courier.** Use a postcode zone (a postcode prefix such as `123*`) ordered above the country zone, holding pickup and the courier. The country zone gets the courier only.
+- **Shipping plugin prerequisites (Shiprocket as the example).** Rates need the merchant link (the plugin's signup button fills `integration_id`), realtime rates on, and a verified account with a pickup address and wallet. Until then the API answers "pincode not serviceable". The fallback rate shows only when the zone has no other method. It may add no tax on shipping, so check the tax on live courier rates once active.
+- **Razorpay.** The plugin (woo-razorpay 4.x) creates its own webhook at `admin-post.php?action=rzp_wc_webhook`, not the old `?wc-api=razorpay` route. Verify server-side with the plugin's SDK (`$api->request->request('GET','webhooks')`) before asking anyone to add one by hand.
+- **Native tax classes (GST as the example).** Standard and Reduced classes, with per-class rows for the store state (CGST then SGST, by priority) and a blank-state IGST row at priority 1 so the specific state wins. Rates by price band change by law: confirm current rules with the owner. Test with `WC_Tax::find_rates()`. Idea for a later brand-agnostic add-on: a FluentSnippets filter on `woocommerce_product_get_tax_class` (and the variation filter) that picks the class from the live price, with settings for the threshold, the classes and excluded categories. Create the snippet with `Helper::createSnippet()`, then set `@status: published` and call `cacheSnippetIndex()`. A workflow plugin cannot do this, since it reacts to events and does not filter prices.
+- **Email body font.** A Times or empty `woocommerce_email_font_family` makes body text serif under the MailPoet WooCommerce template. Count `font-family:` in an `EmailPreview` render. MailPoet's `woocommerce.brandingColor` is both the heading bar and the link colour, so keep it dark.
+
+## Email checks
+
+- **Which mailer sends.** Hook `wp_mail_failed` and send a test. After deactivating a mailer plugin, test in a new request, since the old one can linger in the current request.
+- **Free mail plans** (for example a free hosted mailbox tier) often have no SMTP. Do not plan on them as the sender.
+- **MailPoet Sending Service.** When active, it can send all site emails (`send_transactional_emails`) once FluentSMTP is off.
+- **MailPoet automations from templates.** Create with `CreateAutomationFromTemplateController::createAutomation('<slug>')` and edit step args through `AutomationStorage`. The email itself is only created when "Edit content" is opened in the UI (choose the Classic editor). Then edit its JSON body, activate with `setStatus('active')` plus `AutomationValidator`, and check with `SendPreviewController::sendPreview()`. The WooCommerce template (`wc_transactional`) and the confirmation email are JSON bodies you edit by walking `content.blocks`.
+- **Logos.** SVG does not render in Gmail or Outlook. Use PNG. A PNG on a solid light rounded plate stays readable in dark mode. Server Imagick often lacks the SVG delegate, so render with a local headless browser.
+- **Vector check.** An uploaded `.svg` may only wrap a base64 PNG (`<image xlink:href="data:image/png...`). That is not a vector: ask for a true vector or trace the alpha channel.
+
 ## Reporting
 
 Write the findings into the scratchpad's site canon table. Then list recommended optimizations separately, each with what it fixes and what it risks.

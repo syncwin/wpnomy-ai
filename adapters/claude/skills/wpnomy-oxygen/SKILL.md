@@ -84,7 +84,7 @@ Breakdance Forms' Form Builder is a composite and cannot hold library fields or 
 
 ## 8. Dynamic data
 
-Oxygen reads ACF, Meta Box and Toolset fields natively (`AcfField`, `MetaboxField`, `ToolsetField` families, plus post, term, author, user and WooCommerce fields). Bind fields through dynamic data, never through `PhpCode` or shortcodes. Field setup belongs to `wpnomy-acf` or `wpnomy-metabox`.
+Oxygen reads ACF, Meta Box and Toolset fields natively (`AcfField`, `MetaboxField`, `ToolsetField` families, plus post, term, author, user and WooCommerce fields). Bind fields through dynamic data, never through `PhpCode` or shortcodes. Field setup belongs to `wpnomy-acf` or `wpnomy-metabox`. Where a shortcode is the right tool (a figure inside a sentence), it goes in the Oxygen Shortcode element only; check the front end after saving.
 
 ## 9. Check
 

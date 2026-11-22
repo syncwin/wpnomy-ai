@@ -69,3 +69,7 @@ Repeaters, relationships and post loops render through the Loop Builder, never h
 ## When a field renders blank
 
 Check the render path before assuming the data is wrong. Read the raw stored value first. A correct value can sit behind a disabled snippet, a cached page, a tag reading the wrong key, or a code path that does not execute in preview mode at all. Confirm on the published page before treating empty preview output as a bug.
+
+## Where shortcodes run
+
+ACF runs shortcodes only in WYSIWYG fields. Plain text and textarea fields print them as text; bind a dynamic tag instead, or switch the field type.

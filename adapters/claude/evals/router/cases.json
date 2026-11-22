@@ -62,6 +62,18 @@
       "expected": "wpnomy-elementor-atomic"
     },
     {
+      "prompt": "set up ThinkRank on the store and apply our SEO baseline",
+      "expected": "wpnomy-thinkrank"
+    },
+    {
+      "prompt": "we are moving off Yoast, what does the migration miss and how do we fix duplicate JSON-LD",
+      "expected": "wpnomy-thinkrank"
+    },
+    {
+      "prompt": "generate llms.txt and check the sitemap with the SEO plugin",
+      "expected": "wpnomy-thinkrank"
+    },
+    {
       "prompt": "write me a blog post about first-time buyer incentives",
       "expected": "ask"
     },

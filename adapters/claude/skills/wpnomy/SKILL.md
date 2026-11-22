@@ -1,6 +1,6 @@
 ---
 name: wpnomy
-description: Entry point for every WordPress build with the house black box policy, on any site. Use whenever the user asks to build, design, rebuild, restyle or extend a page, template, header, footer, single, archive, loop item or component in Bricks, Elementor (V4 or V3), Oxygen 6 or Builderius; attaches a mockup or screenshot and wants it built in a page builder; uploads a builder export and wants changes; asks about global classes, variables, components, breakpoints, query loops, the Atomic Framework or Atomic Wireframe; or needs custom fields, post types or taxonomies with ACF or Meta Box and their values on a page. Trigger even when they never name the builder but mention their page builder, a template import or building on staging. Routes to wpnomy-bricks, wpnomy-elementor-atomic (V4), wpnomy-elementor-classic (V3 edits), wpnomy-oxygen, wpnomy-builderius, wpnomy-acf and wpnomy-metabox.
+description: Entry point for every WordPress build with the house black box policy, on any site. Use whenever the user asks to build, design, rebuild, restyle or extend a page, template, header, footer, single, archive, loop item or component in Bricks, Elementor (V4 or V3), Oxygen 6 or Builderius; attaches a mockup or screenshot and wants it built in a page builder; uploads a builder export and wants changes; asks about global classes, variables, components, breakpoints, query loops, the Atomic Framework or Atomic Wireframe; or needs custom fields, post types or taxonomies with ACF or Meta Box and their values on a page. Trigger even when they never name the builder but mention their page builder, a template import or building on staging. Routes to wpnomy-bricks, wpnomy-elementor-atomic (V4), wpnomy-elementor-classic (V3 edits), wpnomy-oxygen, wpnomy-builderius, wpnomy-acf, wpnomy-metabox and wpnomy-thinkrank (SEO plugin work).
 license: MIT
 ---
 
@@ -18,13 +18,14 @@ Read top to bottom. A row matches when any trigger phrase appears in the request
 |---|---|---|---|
 | 0 | meta box; metabox; rwmb; mb builder; mb views; mb relationships; mb custom table; mb settings page; !bricks; !elementor; !oxygen; !builderius | `wpnomy-metabox` | (none) |
 | 1 | acf; advanced custom fields; acf-json; acf fields; acf repeater; flexible content; !bricks; !elementor; !oxygen; !builderius | `wpnomy-acf` | (none) |
-| 2 | bricks; bricks builder; bricks template | `wpnomy-bricks` | `wpnomy-acf`, `wpnomy-metabox` |
-| 3 | oxygen; oxygen 6; breakdance | `wpnomy-oxygen` | `wpnomy-acf`, `wpnomy-metabox` |
-| 4 | builderius | `wpnomy-builderius` | `wpnomy-acf`, `wpnomy-metabox` |
-| 5 | elementor v3; elementor 3; elementor 3.x; classic widget; classic widgets; legacy elementor; existing elementor page | `wpnomy-elementor-classic` | `wpnomy-acf`, `wpnomy-metabox` |
-| 6 | elementor v4; v4; atomic elements; atomic editor; atomic framework; elementor variables; elementor component; elementor components; global class; global classes | `wpnomy-elementor-atomic` | `wpnomy-acf`, `wpnomy-metabox` |
+| 2 | thinkrank; seo plugin; yoast migration; move off yoast; moving off yoast; moving from yoast; json-ld; schema markup; llms.txt; !bricks; !elementor; !oxygen; !builderius | `wpnomy-thinkrank` | (none) |
+| 3 | bricks; bricks builder; bricks template | `wpnomy-bricks` | `wpnomy-acf`, `wpnomy-metabox` |
+| 4 | oxygen; oxygen 6; breakdance | `wpnomy-oxygen` | `wpnomy-acf`, `wpnomy-metabox` |
+| 5 | builderius | `wpnomy-builderius` | `wpnomy-acf`, `wpnomy-metabox` |
+| 6 | elementor v3; elementor 3; elementor 3.x; classic widget; classic widgets; legacy elementor; existing elementor page | `wpnomy-elementor-classic` | `wpnomy-acf`, `wpnomy-metabox` |
+| 7 | elementor v4; v4; atomic elements; atomic editor; atomic framework; elementor variables; elementor component; elementor components; global class; global classes | `wpnomy-elementor-atomic` | `wpnomy-acf`, `wpnomy-metabox` |
 
-**Tie-break rules** (the row order encodes them): a request that names a builder goes to that builder's skill, which loads the ACF or Meta Box skill from its Then column only when the page is dynamic; a data-model request with no builder named goes to `wpnomy-metabox` or `wpnomy-acf`; Meta Box beats ACF when both are named; edits to existing Elementor 3.x pages go to `wpnomy-elementor-classic` (maintain-only, never new V3 builds); Elementor V4 and its Atomic Framework go to `wpnomy-elementor-atomic`. A request that fits two rows runs the earlier row first.
+**Tie-break rules** (the row order encodes them): a request that names a builder goes to that builder's skill, which loads the ACF or Meta Box skill from its Then column only when the page is dynamic; a data-model request with no builder named goes to `wpnomy-metabox` or `wpnomy-acf`; Meta Box beats ACF when both are named; SEO plugin work (ThinkRank, Yoast moves, JSON-LD, llms.txt) goes to `wpnomy-thinkrank`, never to a builder skill; edits to existing Elementor 3.x pages go to `wpnomy-elementor-classic` (maintain-only, never new V3 builds); Elementor V4 and its Atomic Framework go to `wpnomy-elementor-atomic`. A request that fits two rows runs the earlier row first.
 
 **Default when no row matches:** never answer or start the task itself in the routing step. Ask one closed question with these options and stop: "Which builder or data plugin is this for: (a) Bricks, (b) Elementor V4, (c) an existing Elementor 3.x page, (d) Oxygen 6, (e) Builderius, (f) ACF or Meta Box data with no builder, or (g) something else, such as a blog post or a speed audit, which this plugin does not handle?" Step 1 below asks the same builder question when the site is not yet confirmed.
 
@@ -72,7 +73,7 @@ Ask in one message and wait. Skip anything already answered.
 | `gutenberg-edit-content` | Content in the block editor rather than a builder |
 | `custom-theme-build` | A coded child theme or page template instead of builder output |
 | `kadence-build-page` | Kadence theme settings, palette, header and footer chrome |
-| `yoast-integration` | SEO titles, meta, canonicals, indexing, redirects |
+| `yoast-integration` | SEO titles, meta, canonicals, indexing, redirects on a site that keeps Yoast. Moving to ThinkRank is `wpnomy-thinkrank` |
 | `form-model-schema`, `form-model-migration` | Contact form schemas and moving between form plugins |
 | `content-model-migration` | Moving a field schema between modelling plugins |
 | `novamira-design` | Capturing or applying the site's saved design direction |

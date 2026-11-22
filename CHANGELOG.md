@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0: Field feedback and ThinkRank skill
+
+**Added**
+- New skill `wpnomy-thinkrank` for the ThinkRank SEO plugin: setup with a brand-agnostic baseline, moving off Yoast and what the move misses, schema through ThinkRank, retiring builder or custom JSON-LD, configuring through its REST routes, checks and known 2.21.x issues. The router routes ThinkRank, SEO-plugin, Yoast-move, JSON-LD and llms.txt requests to it when no builder is named.
+- Bricks: `references/known-issues.md` (2.4.5 import signature and custom icon bugs, the execute-php user 0 and capabilities cache reset).
+- Elementor V4: `references/known-issues.md` (`e-image` id swap, CSS cache clearing, `save_plain_text` fallback).
+
+**Changed**
+- Bricks: read the site's breakpoint strategy instead of assuming mobile-first; on mobile-first sites batch-created classes, element styles and popup settings get the base breakpoint key at the create step. Added the post-import pass, import limits and workarounds, deep-merge on CSS-to-native conversion, popup scope classes, buttons as dialog triggers, the create-template re-sign flow, the shared archive template rule, backup before live edits, and a final vision review at desktop and phone widths with a section-height comparison.
+- Router house rules: load a site's own SOP skill before any write, `run-wp-cli` args as an array, a plugin install SOP for live sites and security plugin rules. Site audit: go-live purchase check through the Store API without placing an order, WooCommerce go-live checks (shipping, zones, payment webhooks, GST tax classes, email font) and email checks (mailer, MailPoet, logos). House rules also cover DNS fallback, Chrome profiles, `alert()` dialogs and upload links.
+- Field feedback round 2: house rules for stack learning, breakpoint strategy, a browser vision review, figures through the data source and loopback User-Agent; Elementor V4 shortcode and two-form link rules; Bricks Heading and Basic Text shortcodes; Oxygen, Builderius, ACF and Meta Box shortcode notes.
+
+
 ## 0.2.1: Release fix
 
 **Fixed**

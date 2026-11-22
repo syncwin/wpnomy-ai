@@ -1,5 +1,13 @@
 # First-run audit and verification
 
+## Contents
+- First run on a Bricks site
+- After every write
+- Front-end gate
+- Vision review
+- Live edits: back up and count
+- Restore and clean up
+
 ## First run on a Bricks site
 
 Read-only. Fills the scratchpad's Bricks canon. Recommends; implements nothing.
@@ -89,6 +97,17 @@ Silent failures to suspect: success with the old state (a save filter vetoed it)
 Without a browser, `bricks/render-elements` is the fallback evidence. Say which checks it could not cover.
 
 Never report a build as done because it saved. Report what was verified, and name what was not.
+
+## Vision review (final step of every page build)
+
+1. Open the built page and the design side by side in the browser.
+2. Compare section by section at a desktop width and at a phone width. Look at spacing, type scale, alignment, images and states.
+3. Compare each section's rendered height with the design. A large gap means a missing rule, a wrong breakpoint key or an import artefact.
+4. Fix what differs, then repeat. Report what was compared and at which widths.
+
+## Live edits: back up and count
+
+Before a live edit to a page, copy `_bricks_page_content_2` into a dated option. After the write, fetch the front end and count the `brxe-<id>` markers per element or term type. The counts must match what was planned. A mismatch means roll back from the dated option.
 
 ## Restore and clean up
 
