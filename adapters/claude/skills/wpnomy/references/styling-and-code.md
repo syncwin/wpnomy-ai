@@ -30,7 +30,7 @@ Only then create something new, at the lowest step of the ladder that can hold i
 | 4 | **Component** (with properties, and a `class` property for variants) | Structure used more than once. Styling stays in the classes inside it |
 | 5 | **Element, native style fields** | Placement one-offs only (see below), values from tokens |
 | 6 | **Element custom CSS, short** | A placement one-off no field expresses: one rule, up to about 10 declarations, tokens only, no `@keyframes`, no `@font-face` |
-| 7 | **FluentSnippets** | Anything large, site-wide or shared across builders: utility sets, the dark-mode block, `@keyframes`, small vanilla JS, PHP hooks (query vars, echo allow-list, filters). Data goes in the AuraKeyRealty Data plugin, never a snippet |
+| 7 | **FluentSnippets** | Anything large, site-wide or shared across builders: utility sets, the dark-mode block, `@keyframes`, small vanilla JS, PHP hooks (query vars, echo allow-list, filters). Site data (figures, prices, counts) comes from a dynamic source: the site's own data plugin, custom fields or options, never hardcoded in a snippet |
 
 Not used for new work: the builder's global custom-code areas (Bricks Settings custom code, Elementor site-wide Custom Code) and child-theme files, because code split across several places is code nobody finds. Existing code found there is moved to FluentSnippets when that area is next touched, with a yes. One exception: design-system foundation CSS the editor itself must render while you build (the Atomic Framework token layer on Elementor V4: its `:root` block and the dark block generated with it) stays in Elementor's site-wide custom CSS, because a snippet that loads only on the front end leaves the editor unstyled.
 

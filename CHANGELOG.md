@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1: Brand-agnostic data rule
+
+**Changed**
+- Styling and code: FluentSnippets row now says site data comes from a dynamic source (the site's own data plugin, custom fields or options), with no product or brand name.
+
 ## 0.3.0: Field feedback and ThinkRank skill
 
 **Added**
